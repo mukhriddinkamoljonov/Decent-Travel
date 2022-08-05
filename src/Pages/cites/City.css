@@ -1,0 +1,41 @@
+.city-header {
+  background: url(../../assets/Images/city.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.city-bc {
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 170px;
+}
+
+.cites-content {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.city-head-title {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 96px;
+  width: 634px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.city-head-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  width: 450px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+}
