@@ -10,6 +10,7 @@ import rasm6 from "../../assets/Rectangle 22436.png";
 import rasm7 from "../../assets/rasm7.png";
 import rasm8 from "../../assets/rasm8.png";
 import rasm9 from "../../assets/rasm9.png";
+import Footer from "../../Components/footer/Footer";
 
 const Umrah = () => {
   return (
@@ -236,7 +237,9 @@ const Umrah = () => {
         <li>Reference: Please insert your postcode</li>
       </ul>
     </div>
-    </div>
+    
+    
+    <Footer /></div>
   );
 };
 
