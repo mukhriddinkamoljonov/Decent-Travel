@@ -27,7 +27,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
-import Footer from "../../Components/footer/Footer";
 
 const SectionStyle = {
   height: "100vh",
@@ -278,8 +277,7 @@ function Home() {
               <hr className="center-text-line_5" />
               <div className="home_contact_content flex">
                 <div className="">
-                  <div className="flex mb-2">
-                    {/*  */}
+                  <div className="flex">
                     <span>
                       <MapIcon />
                     </span>
@@ -288,6 +286,7 @@ function Home() {
                       <br /> United Kingdom
                     </p>
                   </div>{" "}
+                  <br />
                   <div className="flex">
                     <span>
                       <PhoneIcon />
@@ -296,12 +295,13 @@ function Home() {
                   </div>
                 </div>
                 <div className="mb-11 ml-25">
-                  <div className="flex mb-4">
+                  <div className="flex">
                     <span>
                       <MessengeIcon />
                     </span>
                     <p>contact@TourismUmrah.com</p>
                   </div>{" "}
+                  <br />
                   <div className="flex">
                     <span>
                       <FileIcon />
@@ -312,7 +312,6 @@ function Home() {
               </div>
               <button>So‘rov yuborish</button>
             </div>
-            <Footer />
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
