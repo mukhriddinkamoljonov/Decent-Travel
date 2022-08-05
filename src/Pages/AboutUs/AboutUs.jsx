@@ -67,9 +67,10 @@ const AboutUs = () => {
                 width="1130"
                 height="450"
                 style={{ border: 0 }}
-                allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                frameBorder="0"
+                title="location"
               ></iframe>
             </div>
           </div>

@@ -1,0 +1,21 @@
+.question-header {
+  background: url(../../assets/Images/questions.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.question-bc {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) -6.11%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 170px;
+}
