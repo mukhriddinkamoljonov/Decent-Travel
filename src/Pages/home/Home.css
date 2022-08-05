@@ -349,7 +349,7 @@ div {
   text-align: center;
   padding-left: 120px;
   padding-right: 120px;
-  padding-top: 60px;
+  /* padding-top: 60px;  */
 }
 
 .home_contact_content {
@@ -369,7 +369,7 @@ div {
 }
 
 .home_contact button {
-  margin-top: 80px;
+  margin-top: 20px;
   width: 174px;
   height: 56px;
   color: #fff;
