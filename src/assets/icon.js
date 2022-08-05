@@ -12,7 +12,7 @@ function FlagIcon() {
         stroke="white"
         stroke-width="1.5"
         stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -348,7 +348,7 @@ function FileIcon() {
         stroke="black"
         stroke-width="2"
         stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -371,7 +371,7 @@ function Facebook() {
   );
 }
 
-function Twitter() { 
+function Twitter() {
   return (
     <svg
       width="20"
@@ -424,5 +424,5 @@ export {
   FileIcon,
   Facebook,
   Twitter,
-  Instagram
+  Instagram,
 };
