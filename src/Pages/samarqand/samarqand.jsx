@@ -32,22 +32,17 @@ const Samarqand = () => {
               <p className="not-italic font-bold text-5xl text-[#0E0E2C]">
                 Samarqand sayohati
               </p>
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex items-center mt-4">
                 <div>
                   <p className="text">7 - 10 August 2022</p>
                   <p className="text">Tour Code: SAMARKAND22</p>
                 </div>
-                <div className="flex gap-12">
-                  <div>
+                <div className="flex">
+                  <div className="ml-8">
                     <p className="text leading-8 font-bold text-[#F3692E]">
                       765 000 So‘m
                     </p>
                     <p className="text">Bir kishi uchun</p>
-                  </div>
-                  <div>
-                    <button className="py-[18px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
-                      Buyurtma qilish
-                    </button>
                   </div>
                 </div>
               </div>
@@ -303,7 +298,7 @@ const Samarqand = () => {
                 oshxonasi haqida batafsil maʼlumotni ushbu havola orqali
                 oʻqishingiz mumkin.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-[48px]">
                 <img
                   className="w-[240px] h-[240px] rounded-lg object-cover"
                   src={karimov}
@@ -367,7 +362,40 @@ const Samarqand = () => {
               ></iframe>
             </div>
             <div className="col-span-4">
-              <Search />
+              <div className="flex flex-col">
+                <Search />
+                <div className="bg-white transition duration-150 ease-out shadow-lg shadow-neutral-400/50 py-[24px] pl-9 rounded mt-[32px] max-w-[270px]">
+                  <ul className="not-italic  font-bold text-lg leading-6 flex flex-col gap-[18px]">
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Samarqand sayohati
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Shahar haqida
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Eng mashhur joylari
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Samarqand haqida video
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Iqlimi
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Oshxonalar
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Tarixi
+                    </li>
+                    <li className="hover:text-[#F3692E] cursor-pointer">
+                      Location
+                    </li>
+                  </ul>
+                </div>
+                <button className="py-[18px] w-[270px] mt-[32px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
+                  Buyurtma qilish
+                </button>
+              </div>
             </div>
           </div>
           <p className="not-italic font-bold text-5xl text-gray-900 mt-[48px]">
