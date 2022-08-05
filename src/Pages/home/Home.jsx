@@ -279,6 +279,7 @@ function Home() {
               <div className="home_contact_content flex">
                 <div className="">
                   <div className="flex mb-2">
+                    {/*  */}
                     <span>
                       <MapIcon />
                     </span>
