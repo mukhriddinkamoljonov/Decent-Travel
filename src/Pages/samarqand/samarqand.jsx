@@ -259,9 +259,9 @@ const Samarqand = () => {
                 height="358px"
                 src="https://www.youtube.com/embed/oovCaxhMAJU"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <p className="mt-[48px] not-italic font-semibold text-2xl leading-8 text-orange-600">
                 Iqlimi
@@ -361,12 +361,12 @@ const Samarqand = () => {
                 width="100%"
                 height="355px"
                 style={{ border: "0" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="col-span-4 bg-blue-400">
+            <div className="col-span-4">
               <Search />
             </div>
           </div>
