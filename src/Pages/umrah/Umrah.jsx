@@ -24,7 +24,7 @@ const Umrah = () => {
         </div>
       </div>
       <div className="text-cente textsp">
-        <h1 className="w-[569px] h-[58px]  text-[48px] font-bold leading-[120%] ml-[486px] text-[#0E0E2C] mt-[30px]">
+        <h1 className="w-[569px] h-[58px]  text-[48px] font-bold leading-[120%]  ml-[486px] text-[#0E0E2C] mt-[30px]">
           Umra toʻplami 2022
         </h1>
         <p className="font-medium ml-[560px] w-[320px] h-[32px] text-[20px] not-italic] text-[#0E0E2C] mt-[25px]">
