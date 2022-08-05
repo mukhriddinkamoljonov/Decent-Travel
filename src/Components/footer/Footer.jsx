@@ -1,22 +1,23 @@
 import React from "react";
-import { Logo } from "../../assets/icon";
+import { Facebook, Instagram, Logo, Twitter } from "../../assets/icon";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-container">
         {/* // You need to write the footer part of the website */}
-        <div className="footer-content">
-          <div className="">
+        <div className="footer-content flex">
+          <div className="mr-30">
             <div className="footer-content-log">
               <Logo />
             </div>
-            <p>
-              With travala you can experience new travel and the best tourist
+            <p className="">
+              With travala you can experience new travel and the best tourist{" "}
               destinations that we have to offer
             </p>
           </div>
-          <div className="">
+          <div className="footer-nav">
             <h3 className="footer-content-head-text">Services</h3>
             <div>
               <ul className="footer-content-list">
@@ -27,7 +28,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>{" "}
-          <div className="">
+          <div className="footer-nav">
             <h3 className="footer-content-head-text">Services</h3>
             <div>
               <ul className="footer-content-list">
@@ -38,14 +39,30 @@ const Footer = () => {
               </ul>
             </div>
           </div>{" "}
-          <div className="">
+          <div className="footer-nav">
             <h3 className="footer-content-head-text">Follow Us</h3>
             <div>
-              <ul className="footer-content-list">
-                <li>Home</li>
-                <li>Shaharlar</li>
-                <li>Diqqatga sazovor joylar</li>
-                <li>Galereya</li>
+              <ul className="footer-content-list flex">
+                <div>
+                  <div className="flex">
+                    <span className="mr-5">
+                      <Facebook />
+                    </span>
+                    Facebook
+                  </div>
+                  <div className="flex">
+                    <span className="mr-2">
+                      <Twitter />
+                    </span>
+                    Twitter
+                  </div>
+                  <div className="flex">
+                    <span className="mr-2">
+                      <Instagram />
+                    </span>
+                    Instagram
+                  </div>
+                </div>
               </ul>
             </div>
           </div>
