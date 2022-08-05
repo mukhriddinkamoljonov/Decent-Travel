@@ -414,6 +414,42 @@ function Instagram() {
   );
 }
 
+function Close() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.59961 1.59998L14.3996 14.4M1.59961 14.4L14.3996 1.59998"
+        stroke="black"
+        stroke-width="2"
+      />
+    </svg>
+  );
+}
+
+function AddIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.99974 1.06665V14.9333M1.06641 7.99998H14.9331"
+        stroke="black"
+        stroke-width="2"
+      />
+    </svg>
+  );
+}
+
 export {
   FlagIcon,
   Logo,
@@ -425,4 +461,6 @@ export {
   Facebook,
   Twitter,
   Instagram,
+  Close,
+  AddIcon
 };
