@@ -10,10 +10,11 @@ import rasm6 from "../../assets/Rectangle 22436.png";
 import rasm7 from "../../assets/rasm7.png";
 import rasm8 from "../../assets/rasm8.png";
 import rasm9 from "../../assets/rasm9.png";
+import Footer from "../../Components/footer/Footer";
 
 const Umrah = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen mx-auto  absolute">
       <div className="w-full h-[643px] bg-zinc-900 flex justify-center items-center ">
         <div className="w-3/6 leading-[96px] text-white text-[70px] font-bold pl-[120px] ">
           <h1>Umra ziyorati uchun hozir band qiling!</h1>
@@ -236,7 +237,9 @@ const Umrah = () => {
         <li>Reference: Please insert your postcode</li>
       </ul>
     </div>
-    </div>
+    
+    
+    <Footer /></div>
   );
 };
 
