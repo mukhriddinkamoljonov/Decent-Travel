@@ -294,7 +294,7 @@ function Home() {
                     <p>(+1) 923 2341 22</p>
                   </div>
                 </div>
-                <div className="mb-11">
+                <div className="mb-11 ml-25">
                   <div className="flex">
                     <span>
                       <MessengeIcon />
