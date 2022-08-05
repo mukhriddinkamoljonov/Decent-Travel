@@ -1,0 +1,14 @@
+@import url("http://fonts.cdnfonts.com/css/clarika-geometric");
+
+body {
+    font-family: 'Clarika Geometric';
+}
+
+.umrah_ul li {
+    list-style: inside;
+}
+
+.hotel_img {
+    width: 150px;
+    height:150px;
+}
