@@ -8,7 +8,6 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  /* background-color: red; */
 }
 .acc-bc {
   background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
