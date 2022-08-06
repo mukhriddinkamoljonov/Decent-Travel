@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { AddIcon, Close } from "../../assets/icon";
 import "./Questions.css";
+import Search from "../../Components/search/search";
 
 const Questions = () => {
   const [expanded, setExpanded] = useState(false);
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
+  const [expanded3, setExpanded3] = useState(false);
+  const [expanded4, setExpanded4] = useState(false);
+  const [expanded5, setExpanded5] = useState(false);
+  const [expanded6, setExpanded6] = useState(false);
+  const [expanded7, setExpanded7] = useState(false);
+  const [expanded8, setExpanded8] = useState(false);
+  const [expanded9, setExpanded9] = useState(false);
 
   return (
     <div className="questions">
@@ -110,9 +118,227 @@ const Questions = () => {
                     </p>
                   </>
                 )}
+              </article>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded3(!expanded3)}
+                    className="question-title"
+                  >
+                    Sayohat paytida pasport yo'qolgan yoki o'g'irlangan. Nima
+                    qilish kerak?
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded3(!expanded3)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded3 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>
+              <h2 className="location">Viza </h2>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded4(!expanded4)}
+                    className="question-title"
+                  >
+                    O‘zbekistonga sayohat uchun pasport/xalqaro pasportning amal
+                    qilish muddati qancha?
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded4(!expanded4)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded4 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded5(!expanded5)}
+                    className="question-title"
+                  >
+                    Sizning milliy oshxonangiz qanday?
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded5(!expanded5)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded5 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded6(!expanded6)}
+                    className="question-title"
+                  >
+                    O'zbekistonda eng katta bayram qaysi?{" "}
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded6(!expanded6)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded6 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>
+              <h2 className="location">Registratsiya</h2>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded7(!expanded7)}
+                    className="question-title"
+                  >
+                    O‘zbekistonga sayohat uchun pasport/xalqaro pasportning amal
+                    qilish muddati qancha?
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded7(!expanded7)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded7 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded8(!expanded8)}
+                    className="question-title"
+                  >
+                    Sizning milliy oshxonangiz qanday?
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded8(!expanded8)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded8 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
+              </article>{" "}
+              <article className="question">
+                <header>
+                  <h4
+                    onClick={() => setExpanded9(!expanded9)}
+                    className="question-title"
+                  >
+                    O'zbekistonda eng katta bayram qaysi?{" "}
+                  </h4>
+                  <button
+                    className="btn"
+                    onClick={() => setExpanded9(!expanded9)}
+                  >
+                    {expanded ? <Close /> : <AddIcon />}
+                  </button>
+                </header>
+                {expanded9 && (
+                  <>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa iste voluptate inventore accusamus hic, repudiandae
+                      accusantium consequuntur sint nobis alias, fugiat quia?
+                      Vel, harum magni sint eos mollitia aperiam iure.
+                    </p>
+                  </>
+                )}
               </article>
             </div>
-            <div className=" bg-gradient-to-r from-purple-500 to-pink-500 flex-auto w-24"></div>
+            <div className="mt-[40px] ">
+              <div className="col-span-4 ">
+                <div className="flex flex-col">
+                  <Search />
+                  <div className="bg-white transition duration-150 ease-out shadow-lg shadow-neutral-400/50 py-[24px] pl-9 rounded mt-[32px] max-w-[270px]">
+                    <ul className="not-italic  font-bold text-lg leading-6 flex flex-col gap-[18px]">
+                      <li className="text-[#F3692E] cursor-pointer">
+                        Asosiy savollar
+                      </li>
+                      <li className="hover:text-[#F3692E] cursor-pointer">
+                        Passport
+                      </li>
+                      <li className="hover:text-[#F3692E] cursor-pointer">
+                        Viza
+                      </li>
+                      <li className="hover:text-[#F3692E] cursor-pointer">
+                        Registratsiya
+                      </li>
+                      <li className="hover:text-[#F3692E] cursor-pointer">
+                        Sug'urta
+                      </li>
+                      <li className="hover:text-[#F3692E] cursor-pointer">
+                        Turar joy
+                      </li>
+                    </ul>
+                  </div>
+                  <button className="py-[18px] w-[270px] mt-[32px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
+                    Buyurtma qilish
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="cites-content">
+          <div className="about-content">
             <div className="about-content-main">
               <ul>
                 <li>
