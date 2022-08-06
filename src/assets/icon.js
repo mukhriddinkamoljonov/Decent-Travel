@@ -462,5 +462,5 @@ export {
   Twitter,
   Instagram,
   Close,
-  AddIcon,
+  AddIcon
 };
