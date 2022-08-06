@@ -15,7 +15,7 @@ import Footer from "../../Components/footer/Footer";
 const Umrah = () => {
   return (
     <div className="w-full h-screen mx-auto  absolute">
-      <div className="w-full h-[643px] bg-zinc-900 flex justify-center items-center ">
+      <div className="w-full h-[100vh] bg-zinc-900 flex justify-center items-center ">
         <div className="w-3/6 leading-[96px] text-white text-[70px] font-bold pl-[120px] ">
           <h1>Umra ziyorati uchun hozir band qiling!</h1>
         </div>
@@ -161,85 +161,93 @@ const Umrah = () => {
           </div>
         </div>
       </div>
-      <div className='w-[1030px] flex mt-[1430px] ml-[120px]'>
-        <div className=''>
-          <img src={rasm1} className="w-[320px] h-[260px]" alt=""/>
+      <div className="w-[1030px] flex mt-[1430px] ml-[120px]">
+        <div className="">
+          <img src={rasm1} className="w-[320px] h-[260px]" alt="" />
         </div>
-        <div className='ml-[40px]'>
-          <img src={rasm2} className="w-[320px] h-[260px]" alt=""/>
+        <div className="ml-[40px]">
+          <img src={rasm2} className="w-[320px] h-[260px]" alt="" />
         </div>
-        <div className='ml-[40px]'>
-          <img src={rasm3} className="w-[320px] h-[260px]" alt=""/>
+        <div className="ml-[40px]">
+          <img src={rasm3} className="w-[320px] h-[260px]" alt="" />
         </div>
-    </div>
-    <div className="w-[1030px] mt-[20px] ml-[120px] font-normal text-[20px]">
-      <p>Conrad Makkah Hotel – 5 Star </p>
-      <p className="mt-[20px]">
-          One of Makkah’s top hotels, Conrad Hotels & Resorts is a brand of high-end luxury hotels owned and operated by Hilton Worldwide.  Located steps away from King Fahad gate of Masjid al-Haram.  Featuring spacious luxury rooms including feature bathrooms, Conrad Makkah features four restaurants serving Arabic and international cuisine, a fitness centre, and light-filled meeting spaces.
-      </p>
-      <p className="mt-[20px]">For a convenient shopping experience in Makkah, the hotel provides direct    access to the shopping mall within Jabal Umar complex.
-      </p>
-    </div>
-    <div className='w-[1030px] flex mt-[30px] ml-[120px]'>
-        <div className=''>
-          <img src={rasm4} className="w-[320px] h-[260px]" alt=""/>
-        </div>
-        <div className='ml-[40px]'>
-          <img src={rasm5} className="w-[320px] h-[260px]" alt=""/>
-        </div>
-        <div className='ml-[40px]'>
-          <img src={rasm6} className="w-[320px] h-[260px]" alt=""/>
-        </div>
-    </div>
-    <div className="w-[1030px] mt-[30px] ml-[120px]">
-      <span className="text-[#F3692E]">Price (per person):</span>
-      <div className="w-[1030px] mt-[40px] border-black border-[1px] rounded-[10px]">
-          <div className="flex items-center ml-[50px]">
-            <img src={rasm7} className="hotel_img" alt=""/>
-            <span className="text-[25px] ml-[50px]">
-              <h3>Double Occupancy</h3>
-              <p>£1595</p>
-            </span>
-          </div>
-          <hr  className="w-[970px] ml-[25px] border-black border-[0.5px] "/>
-          <div className="flex items-center ml-[50px]">
-            <img src={rasm8} className="hotel_img" alt=""/>
-            <span className="text-[25px] ml-[50px]">
-              <h3>Double Occupancy</h3>
-              <p>£1595</p>
-            </span>
-          </div>
-          <hr  className="w-[970px] ml-[25px] border-black border-[0.5px] "/>
-          <div className="flex items-center ml-[50px]">
-            <img src={rasm9} className="hotel_img" alt=""/>
-            <span className="text-[25px] ml-[50px]">
-              <h3>Double Occupancy</h3>
-              <p>£1595</p>
-            </span>
-          </div>
       </div>
-    </div>
-    <div className="w-[1030px] mt-[30px] ml-[120px] font-normal text-[20px]">
-      <span className="text-[#F3692E] mt-[10px]">How to book:</span>
-      <p className="mt-[10px]">We will require the following:</p>
-      <ul className="umrah_ul  ml-[20px] mt-[20px]">
-        <li>A completed booking form; (one per person) - please email completed booking form to mail@al-hidaayah.travel
-        </li>
-        <li>A deposit of £1000 per passenger (non-refundable) payable by bank transfer, cash or debit card.
-        </li>
-        <li>
-        To pay by bank transfer, please remit funds to:
-        </li>
-      </ul>
-      <ul className="umrah_ul  ml-[20px] mt-[30px]">
-        <li>Account Name: ACCOUNT UMRAH</li>
-        <li>Account Number: 930006644</li>
-        <li>Reference: Please insert your postcode</li>
-      </ul>
-    </div>
-    
+      <div className="w-[1030px] mt-[20px] ml-[120px] font-normal text-[20px]">
+        <p>Conrad Makkah Hotel – 5 Star </p>
+        <p className="mt-[20px]">
+          One of Makkah’s top hotels, Conrad Hotels & Resorts is a brand of
+          high-end luxury hotels owned and operated by Hilton Worldwide. Located
+          steps away from King Fahad gate of Masjid al-Haram. Featuring spacious
+          luxury rooms including feature bathrooms, Conrad Makkah features four
+          restaurants serving Arabic and international cuisine, a fitness
+          centre, and light-filled meeting spaces.
+        </p>
+        <p className="mt-[20px]">
+          For a convenient shopping experience in Makkah, the hotel provides
+          direct access to the shopping mall within Jabal Umar complex.
+        </p>
+      </div>
+      <div className="w-[1030px] flex mt-[30px] ml-[120px]">
+        <div className="">
+          <img src={rasm4} className="w-[320px] h-[260px]" alt="" />
+        </div>
+        <div className="ml-[40px]">
+          <img src={rasm5} className="w-[320px] h-[260px]" alt="" />
+        </div>
+        <div className="ml-[40px]">
+          <img src={rasm6} className="w-[320px] h-[260px]" alt="" />
+        </div>
+      </div>
+      <div className="w-[1030px] mt-[30px] ml-[120px]">
+        <span className="text-[#F3692E]">Price (per person):</span>
+        <div className="w-[1030px] mt-[40px] border-black border-[1px] rounded-[10px]">
+          <div className="flex items-center ml-[50px]">
+            <img src={rasm7} className="hotel_img" alt="" />
+            <span className="text-[25px] ml-[50px]">
+              <h3>Double Occupancy</h3>
+              <p>£1595</p>
+            </span>
+          </div>
+          <hr className="w-[970px] ml-[25px] border-black border-[0.5px] " />
+          <div className="flex items-center ml-[50px]">
+            <img src={rasm8} className="hotel_img" alt="" />
+            <span className="text-[25px] ml-[50px]">
+              <h3>Double Occupancy</h3>
+              <p>£1595</p>
+            </span>
+          </div>
+          <hr className="w-[970px] ml-[25px] border-black border-[0.5px] " />
+          <div className="flex items-center ml-[50px]">
+            <img src={rasm9} className="hotel_img" alt="" />
+            <span className="text-[25px] ml-[50px]">
+              <h3>Double Occupancy</h3>
+              <p>£1595</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="w-[1030px] mt-[30px] ml-[120px] font-normal text-[20px]">
+        <span className="text-[#F3692E] mt-[10px]">How to book:</span>
+        <p className="mt-[10px]">We will require the following:</p>
+        <ul className="umrah_ul  ml-[20px] mt-[20px]">
+          <li>
+            A completed booking form; (one per person) - please email completed
+            booking form to mail@al-hidaayah.travel
+          </li>
+          <li>
+            A deposit of £1000 per passenger (non-refundable) payable by bank
+            transfer, cash or debit card.
+          </li>
+          <li>To pay by bank transfer, please remit funds to:</li>
+        </ul>
+        <ul className="umrah_ul  ml-[20px] mt-[30px]">
+          <li>Account Name: ACCOUNT UMRAH</li>
+          <li>Account Number: 930006644</li>
+          <li>Reference: Please insert your postcode</li>
+        </ul>
+      </div>
 
-    <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
