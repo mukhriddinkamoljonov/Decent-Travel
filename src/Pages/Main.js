@@ -2,6 +2,7 @@ import City from "./cites/City";
 import Home from "./home/Home";
 import Umrah from "./umrah/Umrah";
 import Attractions from "./attractions/Attractions"
+import Contacts from "./contack/Contacts";
 
 export const Main = [
   {
@@ -19,5 +20,9 @@ export const Main = [
   {
     path: "/attractions",
     page: <Attractions />
+  },
+  {
+    path: "/contacts",
+    page: <Contacts/>
   }
 ];
