@@ -3,6 +3,8 @@ import Home from "./home/Home";
 import Umrah from "./umrah/Umrah";
 import Samarqand from "./samarqand/samarqand";
 import Attractions from "./attractions/Attractions";
+import AboutUs from "./AboutUs/AboutUs";
+import Questions from "./Questions/Questions";
 
 export const Main = [
   {
@@ -24,5 +26,13 @@ export const Main = [
   {
     path: "/attractions",
     page: <Attractions />,
+  },
+  {
+    path: "/aboutus",
+    page: <AboutUs />,
+  },
+  {
+    path: "/questions",
+    page: <Questions />,
   },
 ];

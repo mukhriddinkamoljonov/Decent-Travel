@@ -3,8 +3,10 @@ import React from "react";
 const Search = () => {
   return (
     <div className="flex items-center">
-      <input maxLength={100}
-        className="border outline-none rounded-r-none border-[#3AC170] py-2 px-4 rounded-md"
+      <input
+        maxLength={100}
+        placeholder="Search"
+        className="border outline-none rounded-r-none border-[#3AC170] py-2 px-4 rounded-md w-[222px]"
         type="text"
       />
       <button className="bg-[#3AC170] h-[43px] p-4 flex items-center rounded-r-md justify-center">

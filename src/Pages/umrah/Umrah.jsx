@@ -238,8 +238,9 @@ const Umrah = () => {
       </ul>
     </div>
     
-    
-    <Footer /></div>
+
+    <Footer />
+    </div>
   );
 };
 
