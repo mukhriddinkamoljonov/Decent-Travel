@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AddIcon, Close } from "../../assets/icon";
 import "./Questions.css";
 import Search from "../../Components/search/search";
+import { useTranslation } from "react-i18next";
 
 const Questions = () => {
   const [expanded, setExpanded] = useState(false);
@@ -14,6 +15,7 @@ const Questions = () => {
   const [expanded7, setExpanded7] = useState(false);
   const [expanded8, setExpanded8] = useState(false);
   const [expanded9, setExpanded9] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="questions">
@@ -307,7 +309,7 @@ const Questions = () => {
                 )}
               </article>
             </div>
-            <div className="mt-[40px] ">
+            <div className="mt-[40px]">
               <div className="col-span-4 ">
                 <div className="flex flex-col">
                   <Search />

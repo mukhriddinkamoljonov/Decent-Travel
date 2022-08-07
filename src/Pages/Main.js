@@ -4,7 +4,8 @@ import Umrah from "./umrah/Umrah";
 import Samarqand from "./samarqand/samarqand";
 import Attractions from "./attractions/Attractions";
 import AboutUs from "./AboutUs/AboutUs";
-import Questions from "./Questions/Questions";
+import Questions from "./Quetions/Questions";
+import Contacts from "./contack/Contacts";
 
 export const Main = [
   {
@@ -34,5 +35,9 @@ export const Main = [
   {
     path: "/questions",
     page: <Questions />,
+  },
+  {
+    path: "/contacts",
+    page: <Contacts />,
   },
 ];
