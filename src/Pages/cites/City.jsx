@@ -6,8 +6,11 @@ import xiva from "../../assets/Images/xiva.png";
 import namangan from "../../assets/Images/namangan.png";
 import fargona from "../../assets/Images/fargona.png";
 import Footer from "../../Components/footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const City = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="city-container">

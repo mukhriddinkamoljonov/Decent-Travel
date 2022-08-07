@@ -4,8 +4,11 @@ import { PhoneIcon } from "../../assets/icon";
 import { MessengeIcon } from "../../assets/icon";
 import "./Contacts.css";
 import Footer from "../../Components/footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mx-auto absolute w-full">
       <div className="contact-header">

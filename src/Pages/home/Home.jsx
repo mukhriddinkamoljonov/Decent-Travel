@@ -27,6 +27,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
+import { useTranslation } from "react-i18next";
 
 const SectionStyle = {
   height: "100vh",
@@ -37,6 +38,8 @@ const SectionStyle = {
 };
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="home">
       <Fullpage>
@@ -49,7 +52,7 @@ function Home() {
               <div className="header-bc">
                 <div className="header-content">
                   <p className="first-text">
-                    the best deals on the world's best destinations
+                    {t("main")}, the best deals on the world's best destinations
                   </p>
                   <h1 className="main-text">Best travel and destinations</h1>
                   <p className="last-text">

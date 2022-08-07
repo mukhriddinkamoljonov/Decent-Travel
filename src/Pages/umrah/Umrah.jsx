@@ -11,8 +11,11 @@ import rasm7 from "../../assets/rasm7.png";
 import rasm8 from "../../assets/rasm8.png";
 import rasm9 from "../../assets/rasm9.png";
 import Footer from "../../Components/footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const Umrah = () => {
+    const { t } = useTranslation();
+
   return (
     <div className="w-full h-screen mx-auto  absolute">
       <div className="w-full h-[100vh] bg-zinc-900 flex justify-center items-center ">

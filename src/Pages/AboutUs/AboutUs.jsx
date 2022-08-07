@@ -1,8 +1,11 @@
 import React from "react";
 import "./AboutUs.css";
 import person from "../../assets/Images/aboutperson.png";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="aboutus">
