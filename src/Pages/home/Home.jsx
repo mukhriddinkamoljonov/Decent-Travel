@@ -27,6 +27,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
+import { useTranslation } from "react-i18next";
 
 const SectionStyle = {
   height: "100vh",
@@ -37,6 +38,8 @@ const SectionStyle = {
 };
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="home">
       <Fullpage>
@@ -49,17 +52,15 @@ function Home() {
               <div className="header-bc">
                 <div className="header-content">
                   <p className="first-text">
-                    the best deals on the world's best destinations
+                    {t("main")}, {t("the_best")}
                   </p>
-                  <h1 className="main-text">Best travel and destinations</h1>
+                  <h1 className="main-text">{t("best_travel")}</h1>
                   <p className="last-text">
-                    With travala you can experience new travel and the best{" "}
+                    {t("the_decent")}
                     <br />
-                    tourist destinations that we have to offer tourist
-                    <br />
-                    destinations that we have to offer.
+                    {t("")}
                   </p>
-                  <button>Get Started</button>
+                  <button> {t("turist_city")}</button>
                 </div>
               </div>
             </div>
@@ -67,7 +68,7 @@ function Home() {
           <FullpageSection style={{ SectionStyle }}>
             <div className="header_section-two">
               <div className="home_cards">
-                <h1 className="center-text">Turistik shaharlar</h1>
+                <h1 className="center-text">{t("turist_city")}</h1>
                 <div className="center-text-line" />
                 <div className="card_content grid grid-cols-4 gap-1">
                   <div className="card-item">
@@ -80,19 +81,19 @@ function Home() {
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <h1 className="card-title">Farg'ona</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <h1 className="card-title">Buxoro</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <h1 className="card-title">Xorazm</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
@@ -104,13 +105,13 @@ function Home() {
                     <div className="card-image">
                       <img src={namangan} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <h1 className="card-title">Toshkent</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={fargona} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <h1 className="card-title">Surhandaryo</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
@@ -130,23 +131,19 @@ function Home() {
                 </div>
                 <div className="home_urmrah_content_text">
                   <h1 className="home_urmrah_title">
-                    Umra ziyorati uchun hozir band qiling!
+                    {("umrah_name")}
                   </h1>
                   <p className="home_urmrah_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ipsum eget libero elementum amet ultricies ut hac ultrices
-                    ullamcorper. Enim nullam eu libero accumsan, nisl amet. Enim
-                    nullam eu libero accumsan, nisl amet. Enim nullam eu libero
-                    accumsan, nisl amet.
+                    {t("umrah_text")}
                   </p>
-                  <button className="home_urmrah_button">Get Started</button>
+                  <button className="home_urmrah_button">{t("see_all")}</button>
                 </div>
               </div>
             </div>
           </FullpageSection>
           <FullpageSection style={{ SectionStyle }}>
             <div className="home_carousel">
-              <h1 className="center-text">Diqqatga sazovor joylar</h1>
+              <h1 className="center-text">{t("attractions")}</h1>
               <hr className="carousel-text-line" />
               <div className="home_carousel_content">
                 <Swiper
@@ -168,7 +165,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={karimov} alt="" />
                         </div>
-                        <h1>Islom Karimov muzeyi</h1>
+                        <h1>{t("karimov")} </h1>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -176,7 +173,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={alisher} alt="" />
                         </div>
-                        <h1>Alisher Navoiy teatri</h1>
+                        <h1>{t("navoiy")} </h1>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -184,7 +181,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={ziyorat} alt="" />
                         </div>
-                        <h1>Hazrati Dovud ziyoratgohi</h1>
+                        <h1>{t("hazrati_d")} </h1>
                       </div>
                     </SwiperSlide>{" "}
                     <SwiperSlide>
@@ -192,7 +189,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={alisher} alt="" />
                         </div>
-                        <h1>Alisher Navoiy teatri</h1>
+                        <h1>{t("navoiy")} </h1>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -200,7 +197,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={karimov} alt="" />
                         </div>
-                        <h1>Islom Karimov muzeyi</h1>
+                        <h1>{t("navoiy")} </h1>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -208,7 +205,7 @@ function Home() {
                         <div className="carousel_image">
                           <img src={ziyorat} alt="" />{" "}
                         </div>
-                        <h1>Hazrati Dovud ziyoratgohi</h1>
+                        <h1>{t("hazrati_d")} </h1>
                       </div>
                     </SwiperSlide>
                   </div>
@@ -219,7 +216,7 @@ function Home() {
           <FullpageSection style={{ SectionStyle }}>
             <div className="home_galereya">
               <div className="home_galereya_content">
-                <h1 className="center-text_3">Galereya</h1>
+                <h1 className="center-text_3">{t("gallery")} </h1>
                 <hr className="center-text-line_3" />
                 <div className="home_galereya_images">
                   <div>
@@ -234,13 +231,13 @@ function Home() {
                     <img src={naman} alt="" />
                   </div>
                 </div>
-                <button>Barchasini ko‘rish</button>
+                <button>{t("see_all")}</button>
               </div>
             </div>
           </FullpageSection>
           <FullpageSection style={{ SectionStyle }}>
             <div className="home_about">
-              <h1 className="center-text_4">Biz haqimizda</h1>
+              <h1 className="center-text_4">{t("about_Us")} </h1>
               <hr className="center-text-line_4" />
               <div class="grid grid-rows-3 grid-flow-col gap-4 home_about-content">
                 <div class="col-span-2 about-image_1">
@@ -253,19 +250,9 @@ function Home() {
                 <div class="row-span-3 about-text">
                   <div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ipsum eget libero elementum amet ultricies ut hac ultrices
-                      ullamcorper. Enim nullam eu libero accumsan, nisl amet.
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ipsum eget libero elementum amet ultricies ut hac ultrices
-                      ullamcorper. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Ipsum eget libero elementum amet
-                      ultricies ut hac ultrices ullamcorper. Enim nullam eu
-                      libero accumsan, nisl amet. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Ipsum eget libero elementum
-                      amet ultricies ut hac ultrices ullamcorper.
+                      {t("decent_info")}
                     </p>
-                    <button>Ko‘proq bilish</button>
+                    <button>{t("learn_more")} </button>
                   </div>
                 </div>
               </div>
@@ -273,7 +260,7 @@ function Home() {
           </FullpageSection>
           <FullpageSection style={{ SectionStyle }}>
             <div className="home_contact">
-              <h1 className="center-text_5">Kontaktlarimiz</h1>
+              <h1 className="center-text_5">{t("our_contacts")} </h1>
               <hr className="center-text-line_5" />
               <div className="home_contact_content flex">
                 <div className="">
@@ -282,8 +269,7 @@ function Home() {
                       <MapIcon />
                     </span>
                     <p>
-                      436 Coventry Road Small <br /> Heath Birmingham B10 0UG{" "}
-                      <br /> United Kingdom
+                     {t("location")}
                     </p>
                   </div>{" "}
                   <br />
@@ -291,7 +277,7 @@ function Home() {
                     <span>
                       <PhoneIcon />
                     </span>
-                    <p>(+1) 923 2341 22</p>
+                    <p>99890 580-25-05 </p>
                   </div>
                 </div>
                 <div className="mb-11 ml-25">
@@ -310,11 +296,12 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <button>So‘rov yuborish</button>
+              <button>{t("send_request")} </button>
             </div>
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
+      
     </div>
   );
 }

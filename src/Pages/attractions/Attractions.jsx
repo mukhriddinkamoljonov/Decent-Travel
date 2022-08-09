@@ -3,8 +3,10 @@ import "./Attractions.css";
 import attractionimg1 from "../../assets/image 37.png";
 import Footer from "../../Components/footer/Footer";
 import Search from "../../Components/search/search";
+import { useTranslation } from "react-i18next";
 
 const Attractions = () => {
+  const { t } = useTranslation();
   return (
     <div className="mx-auto absolute w-full">
       <div className="acc-header">
