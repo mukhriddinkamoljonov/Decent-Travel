@@ -40,12 +40,12 @@ function Navbar() {
   const { t } = useTranslation();
   const navigation = [
     { name: `${t("main")}`, href: "#", current: false },
-    { name: "Shaharlar", href: "#", current: false },
-    { name: "Ziyoratlar", href: "#", current: false },
-    { name: "Diqqatga sazovorlar joylar", href: "#", current: false },
-    { name: "Galereya", href: "#", current: false },
-    { name: "Biz haqimizda", href: "#", current: false },
-    { name: "Aloqa", href: "#", current: false },
+    { name: `${t("citys")}`, href: "#", current: false },
+    { name: `${t("pilgrimage")}`, href: "#", current: false },
+    { name: `${t("attractions")}`, href: "#", current: false },
+    { name: `${t("gallery")}`, href: "#", current: false },
+    { name: `${t("about_Us")}`, href: "#", current: false },
+    { name: `${t("сommunication")}`, href: "#", current: false },
   ];
 
   return (
