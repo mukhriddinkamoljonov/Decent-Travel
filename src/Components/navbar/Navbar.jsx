@@ -39,13 +39,13 @@ function classNames(...classes) {
 function Navbar() {
   const { t } = useTranslation();
   const navigation = [
-    { name: `${t("main")}`, href: "#", current: false },
-    { name: "Shaharlar", href: "#", current: false },
-    { name: "Ziyoratlar", href: "#", current: false },
-    { name: "Diqqatga sazovorlar joylar", href: "#", current: false },
-    { name: "Galereya", href: "#", current: false },
-    { name: "Biz haqimizda", href: "#", current: false },
-    { name: "Aloqa", href: "#", current: false },
+    { name: `${t("main")}`, href: "/", current: false },
+    { name: `${t("citys")}`, href: "/cites", current: false },
+    { name: `${t("pilgrimage")}`, href: "/umrah", current: false },
+    { name: `${t("attractions")}`, href: "/attractions", current: false },
+    { name: `${t("gallery")}`, href: "/questions", current: false },
+    { name: `${t("about_Us")}`, href: "/aboutus", current: false },
+    { name: `${t("сommunication")}`, href: "/contacts", current: false },
   ];
 
   return (
