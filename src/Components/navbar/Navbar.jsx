@@ -43,7 +43,7 @@ function Navbar() {
     { name: `${t("citys")}`, href: "/cites", current: false },
     { name: `${t("pilgrimage")}`, href: "/umrah", current: false },
     { name: `${t("attractions")}`, href: "/attractions", current: false },
-    { name: `${t("gallery")}`, href: "#", current: false },
+    { name: `${t("gallery")}`, href: "/questions", current: false },
     { name: `${t("about_Us")}`, href: "/aboutus", current: false },
     { name: `${t("сommunication")}`, href: "/contacts", current: false },
   ];

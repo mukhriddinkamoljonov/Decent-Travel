@@ -1,4 +1,48 @@
+@import url("http://fonts.cdnfonts.com/css/clarika-geometric");
+
+body {
+  font-family: "Clarika Geometric", sans-serif;
+}
+
 .text {
   font-size: 24px;
   line-height: 32px;
+}
+
+#modal-container {
+  width: 445px;
+  height: 605px;
+}
+
+#modal-container h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0d1136;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0a0a0a;
+}
+
+form input {
+  margin-top: 5px;
+  background: #f6f8fa;
+  outline: none;
+  width: 370px;
+  height: 40px;
+  border: 1px solid #eff3f8;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.submit {
+  background: #f36326;
+  border-radius: 8px;
+  padding: 12px 22px;
+  color: #fff;
+  margin-left: 116px;
 }

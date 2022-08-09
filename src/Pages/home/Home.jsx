@@ -28,6 +28,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const SectionStyle = {
   height: "100vh",
@@ -75,7 +76,9 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <Link to="/samarqand">
+                      <h1 className="card-title">Samarqand</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
