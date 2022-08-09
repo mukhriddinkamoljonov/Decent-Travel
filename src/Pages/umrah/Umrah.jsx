@@ -49,15 +49,16 @@ const Umrah = () => {
           </ul>
         </div>
         <div className="w-[1030px] h-[96px] mt-[200px]  ml-[120px] font-normal text-[20px] leading-[30px] font-bold tracking-normal">
-          <span className="text-[#F3692E]">{t("itinerary:")} </span>
-          {t("infoPackage")}
-             <div className="w-[1030px]">
+          <span className="text-[#F3692E]">{t("itinerary")} </span>
+          <br />
+          <span>{t("infoPackage")}</span>
+          <div className="w-[1030px]">
             <span className="text-[#F3692E]">{t("whatnCluded")} </span>
             <ul className="umrah_ul ml-[30px] leading-[40px] mt-[10px]">
-              <li>{t("touristVisas")} </li>
-              <li>{("returnFlights")} </li>
+              <li>{t("touristVisas")}</li>
+              <li>{t("returnFlights")}</li>
               <li>
-                {t("hotelStar")}
+               {t("hotelStar")}
               </li>
               <li>
                 {t("hotelConrad")}
@@ -65,11 +66,11 @@ const Umrah = () => {
               <li>
                 {t("speedRailway")}
               </li>
-              <li> {t("graupLeader")}</li>
+              <li>{t("graupLeader")} </li>
               <li>
-                {("breakfast")}
+                {t("breakfast")}
               </li>
-              <li>{t("ziyarahTrips")} </li>  
+              <li>{t("ziyarahTrips")}</li>  
             </ul>
           </div>
           <div className="">
@@ -80,6 +81,7 @@ const Umrah = () => {
             <p className="w-[1030px] mt-[20px]">
               {t("largesHhotel")}
             </p>
+
           </div>
         </div>
       </div>
@@ -95,16 +97,10 @@ const Umrah = () => {
         </div>
       </div>
       <div className="w-[1030px] mt-[20px] ml-[120px] font-normal text-[20px]">
-        <p>Conrad Makkah Hotel – 5 Star </p>
+        <p>{t("al-MadinahHotel")}</p>
         <p className="mt-[20px]">
-          One of Makkah’s top hotels, Conrad Hotels & Resorts is a brand of
-          high-end luxury hotels owned and operated by Hilton Worldwide. Located
-          steps away from King Fahad gate of Masjid al-Haram. Featuring spacious
-          luxury rooms including feature bathrooms, Conrad Makkah features four
-          restaurants serving Arabic and international cuisine, a fitness
-          centre, and light-filled meeting spaces.
+        {t("largesHhotel")}
         </p>
-        
       </div>
       <div className="w-[1030px] flex mt-[30px] ml-[120px]">
         <div className="">
@@ -146,18 +142,13 @@ const Umrah = () => {
         </div>
       </div>
       <div className="w-[1030px] mt-[30px] ml-[120px] font-normal text-[20px]">
-        <span className="text-[#F3692E] mt-[10px]">How to book:</span>
-        <p className="mt-[10px]">We will require the following:</p>
+        <span className="text-[#F3692E] mt-[10px]">{t("howbBook")}</span>
+        <p className="mt-[10px]">{t("weRequire")} </p>
         <ul className="umrah_ul  ml-[20px] mt-[20px]">
           <li>
-            A completed booking form; (one per person) - please email completed
-            booking form to mail@al-hidaayah.travel
+          {t("paymentService")}
           </li>
-          <li>
-            A deposit of £1000 per passenger (non-refundable) payable by bank
-            transfer, cash or debit card.
-          </li>
-          <li>To pay by bank transfer, please remit funds to:</li>
+          
         </ul>
         <ul className="umrah_ul  ml-[20px] mt-[30px]">
           <li>Account Name: ACCOUNT UMRAH</li>

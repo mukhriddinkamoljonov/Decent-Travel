@@ -1,7 +1,7 @@
 {
   "name": "decent-travel-app",
   "version": "0.1.0",
-  "homepage": "decenttravel.uz",
+  "homepage": "https://decenttravel.uz",
   "private": true,
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.2.0",
