@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -435,3 +434,5 @@ const Samarqand = () => {
 };
 
 export default Samarqand;
+
+     

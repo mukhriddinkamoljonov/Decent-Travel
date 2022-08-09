@@ -52,7 +52,7 @@ function Home() {
               <div className="header-bc">
                 <div className="header-content">
                   <p className="first-text">
-                    {t("main")}, {t("the_best")}
+                   {t("the_best")}
                   </p>
                   <h1 className="main-text">{t("best_travel")}</h1>
                   <p className="last-text">

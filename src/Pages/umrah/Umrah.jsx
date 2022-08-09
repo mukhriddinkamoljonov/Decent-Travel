@@ -148,7 +148,6 @@ const Umrah = () => {
           <li>
           {t("paymentService")}
           </li>
-          
         </ul>
         <ul className="umrah_ul  ml-[20px] mt-[30px]">
           <li>Account Name: ACCOUNT UMRAH</li>
