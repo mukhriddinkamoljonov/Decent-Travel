@@ -477,7 +477,7 @@ const Samarqand = () => {
       >
         <div className="ml-[-20px] justify-center ">
           <div className="ml-[370px]">
-          <div style={{ cursor: "pointer" }} onClick={closeModal}>
+            <div style={{ cursor: "pointer" }} onClick={closeModal}>
               <CloseIcon />
             </div>
           </div>
