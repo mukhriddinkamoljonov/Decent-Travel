@@ -134,7 +134,7 @@ function Home() {
                 </div>
                 <div className="home_urmrah_content_text">
                   <h1 className="home_urmrah_title">
-                    {("umrah_name")}
+                    {t("umrah_name")}
                   </h1>
                   <p className="home_urmrah_text">
                     {t("umrah_text")}
