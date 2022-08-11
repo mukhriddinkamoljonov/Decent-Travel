@@ -19,7 +19,7 @@ const Samarqand = () => {
           <div className="city-bc">
             <div className="cites-content">
               <div className="mt-12">
-                <h1 className="city-head-title">Farg'ona</h1>
+                <h1 className="city-head-title">Samarqand</h1>
                 <p className="city-head-text">Madaniyat chorrahasi</p>
               </div>
             </div>
