@@ -28,6 +28,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const SectionStyle = {
   height: "100vh",
@@ -51,9 +52,7 @@ function Home() {
             <div className="header_section-one">
               <div className="header-bc">
                 <div className="header-content">
-                  <p className="first-text">
-                   {t("the_best")}
-                  </p>
+                  <p className="first-text">{t("the_best")}</p>
                   <h1 className="main-text">{t("best_travel")}</h1>
                   <p className="last-text">
                     {t("the_decent")}
@@ -75,7 +74,9 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <Link to="/samarqand">
+                      <h1 className="card-title">Samarqand</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
@@ -130,12 +131,8 @@ function Home() {
                   <img src={umrah} alt="" />
                 </div>
                 <div className="home_urmrah_content_text">
-                  <h1 className="home_urmrah_title">
-                    {("umrah_name")}
-                  </h1>
-                  <p className="home_urmrah_text">
-                    {t("umrah_text")}
-                  </p>
+                  <h1 className="home_urmrah_title">{t("umrah_name")}</h1>
+                  <p className="home_urmrah_text">{t("umrah_text")}</p>
                   <button className="home_urmrah_button">{t("see_all")}</button>
                 </div>
               </div>
@@ -249,9 +246,7 @@ function Home() {
                 </div>
                 <div class="row-span-3 about-text">
                   <div>
-                    <p>
-                      {t("decent_info")}
-                    </p>
+                    <p className="text-justify w-[350px]">{t("decent_info")}</p>
                     <button>{t("learn_more")} </button>
                   </div>
                 </div>
@@ -268,9 +263,7 @@ function Home() {
                     <span>
                       <MapIcon />
                     </span>
-                    <p>
-                     {t("location")}
-                    </p>
+                    <p>{t("location")}</p>
                   </div>{" "}
                   <br />
                   <div className="flex">
@@ -301,7 +294,6 @@ function Home() {
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
-      
     </div>
   );
 }
