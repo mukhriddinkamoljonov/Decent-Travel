@@ -15,11 +15,9 @@ const Contacts = () => {
         <div className="contact-bc">
           <div className="cites-content">
             <div className="mt-24">
-              <h1 className="city-head-title">Diqqatga sazovor joylar</h1>
+              <h1 className="city-head-title">Biz Bilan Bog'lanish</h1>
               <p className="city-head-text">
-                With travala you can experience new travel and the best tourist
-                destinations that we have to offer tourist destinations that we
-                have to offer
+              Biz bilan bog'lansangiz, o'zingizni kuttirib qo'ymaysiz. Bizning turoperatorlarimiz har qanday so'rovingizga tez va samarali javob beradi.                                    
               </p>
             </div>
           </div>
@@ -27,11 +25,8 @@ const Contacts = () => {
       </div>
       <div className="flex mt-[40px] text-[20px] cites-content">
         <div className="flex-initial w-[450px]">
-          <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
-            libero elementum amet ultricies ut hac ultrices ullamcorper. Enim
-            nullam eu libero accumsan, nisl amet. Enim nullam eu libero
-            accumsan, nisl amet. Enim nullam eu libero accumsan, nisl amet.
+          <p className="text-justify">
+          Decent Honest Travel kompaniyasi O'zbekiston Turizm xizmatlari bozorida yangi hisoblanadi. Hozirgi kunda o'z ishiga ma'suliyat bilan yondoshadigan rofessional xodimlar sizga dunyoning istalgan mintaqasiga turistik yo'llanmalar hamda qulay yo'nalishdagi aviachiptalar taklif qilish salohiyatiga ega. Shu bilan birga O'zbekistondagi vatandoshlarimizga hamda qo'shni mamlakat Musulmon axliga 2022 yildan boshlab Umra hamda Haj safarlarini amalga oshirishda ko'makdosh bo'lib kelmoqda. Bizning kompaniyamiz orqali siz o'zingizga qulay bo'lgan Makka hamda Madina Shaxarlariga mexmonxona aviachiptalar hamda chiptalarini xarid qilishingiz mumkin.
           </p>
 
           <div className="mt-[80px]">
