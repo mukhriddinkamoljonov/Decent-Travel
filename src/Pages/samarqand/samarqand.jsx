@@ -555,7 +555,7 @@ const Samarqand = () => {
               </div>{" "}
               <>
                 <button onClick={closeModal}>Bekor qilish</button>
-                <button className="submit">Buyurtma qilish</button>
+                <button type="submit">Buyurtma qilish</button>
               </>
             </form>
           </div>
