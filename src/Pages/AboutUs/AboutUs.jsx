@@ -16,6 +16,7 @@ const AboutUs = () => {
                 <div className="mt-24">
                   <h1 className="city-head-title">Biz haqimizda</h1>
                   <p className="city-head-text">
+                  Bizning kompaniyamiz orqali siz o'zingizga qulay bo'lgan Makka hamda Madina Shaxarlariga mexmonxona aviachiptalar hamda chiptalarini xarid qilishingiz mumkin.
                   Har bir mehmon bizning do'stimiz va hamkorimiz!
 Biz mehmonlarimizga ularning talablari va ehtiyojlariga to'liq javob beradigan yuqori sifatli turistik mahsulotni taklif etamiz.
                   </p>
@@ -25,6 +26,7 @@ Biz mehmonlarimizga ularning talablari va ehtiyojlariga to'liq javob beradigan y
           </div>
           <div className="about-content">
             <div className="about-content-main">
+            <h1 className="info_text">"Decent Honest Travel” sayyohlik kompaniyasining axborot saytiga xush kelibsiz!</h1>
               <ul>
                 <li>
                   ✔️ Decent Honest Travel kompaniyasi O‘zbekiston sayyohlik

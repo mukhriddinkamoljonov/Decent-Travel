@@ -14,6 +14,7 @@ import { useTranslation } from "react-i18next";
 import Modal from "react-modal";
 import { CloseIcon } from "../../assets/icon";
 import InputMask from "react-input-mask";
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const customStyles = {
@@ -25,7 +26,7 @@ const customStyles = {
 const Samarqand = () => {
   const [name, setName] = useState([]);
   const [surName, setSurName] = useState([]);
-  const [email, setEmail] = useState([]);
+  const [passport, setPassport] = useState([]);
   const [phone, setPhone] = useState([]);
   const { t } = useTranslation();
 
@@ -35,17 +36,49 @@ const Samarqand = () => {
   function openModal() {
     setIsOpen(true);
   }
-
   function afterOpenModal() {
     subtitle.style.color = "#f00";
   }
-
   function closeModal() {
     setIsOpen(false);
   }
+
+  const PathPayme = (e) => {
+    e.preventDefault();
+    const axios = require("axios");
+    const data = JSON.stringify({
+      amount: "1000",
+      full_name: `${name} ${surName}`,
+      pasport_number: passport,
+      phone_number: phone,
+      return_url: `https://worldglamour.uz/`,
+    });
+
+    const config = {
+      method: "post",
+      url: "http://46.101.191.246:5000/register",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: data,
+    };
+
+    axios(config).then(
+      (response) => {
+        if (response.status === 201) {
+          window.location.assign(response.data.invoice);
+        }
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  };
+
   function openTab() {
     window.open('https://my.click.uz/services/pay?service_id=24635&merchant_id=17174&amount=1000&transaction_param=test');
   }
+
   return (
     <>
       <div className="samarqand-container">
@@ -483,28 +516,46 @@ const Samarqand = () => {
           </div>
           <div className="mt-[-20px]">
             <h1 className="text-center">Buyurtma qilish</h1>
-            <form>
+            <form onSubmit={(e) => PathPayme(e)}>
               <div>
                 <label htmlFor="name">Ism</label> <br />
-                <input type="text" placeholder="Ism" />
+                <input
+                  type="text"
+                  placeholder="Ism"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>{" "}
               <div>
                 <label htmlFor="name">Familiyasi</label> <br />
-                <input type="text" placeholder="Familiyasi" />
-              </div>{" "}
-              <div>
-                <label htmlFor="name">Telefon raqami</label> <br />
-                <input type="text" placeholder="Telefon raqami" />
+                <input
+                  type="text"
+                  placeholder="Familiyasi"
+                  value={surName}
+                  onChange={(e) => setSurName(e.target.value)}
+                />
               </div>{" "}
               <div>
                 <label htmlFor="name">Passport seria raqam</label> <br />
-                <input type="text" placeholder="Passport seria raqam" />
+                <input
+                  type="text"
+                  placeholder="Passport seria raqam"
+                  value={passport}
+                  onChange={(e) => setPassport(e.target.value)}
+                />
               </div>
+              <div>
+                <label htmlFor="name">Telefon raqami</label> <br />
+                <input
+                  type="text"
+                  placeholder="Telefon raqami"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+              </div>{" "}
               <>
-                <button>Bekor qilish</button>
-                {/* <Link > */}
+                <button onClick={closeModal}>Bekor qilish</button>
                 <button onClick={openTab}className="submit">Buyurtma qilish</button>
-                {/* </Link> */}
               </>
             </form>
           </div>

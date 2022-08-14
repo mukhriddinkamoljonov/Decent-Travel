@@ -47,7 +47,6 @@ function Navbar() {
     { name: `${t("about_Us")}`, href: "/aboutus", current: false },
     { name: `${t("сommunication")}`, href: "/contacts", current: false },
   ];
-
   return (
     <>
       <Disclosure as="nav" className="bg-gray-800 top-0">
