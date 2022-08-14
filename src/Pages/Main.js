@@ -21,7 +21,7 @@ export const Main = [
     page: <Umrah />,
   },
   {
-    path: "/samarqand",
+    path: "/detailed",
     page: <Samarqand />,
   },
   {
