@@ -15,6 +15,7 @@ import Modal from "react-modal";
 import { CloseIcon } from "../../assets/icon";
 import InputMask from "react-input-mask";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -74,6 +75,10 @@ const Samarqand = () => {
     );
   };
 
+  function openTab() {
+    window.open('https://my.click.uz/services/pay?service_id=24635&merchant_id=17174&amount=1000&transaction_param=test');
+  }
+
   return (
     <>
       <div className="samarqand-container">
@@ -83,7 +88,7 @@ const Samarqand = () => {
               <div className="cites-content">
                 <div className="mt-12">
                   <h1 className="city-head-title">Samarqand</h1>
-                  <p className="city-head-text">Madaniyat chorrahasi</p>
+                  <p className="city-head-text">Madaniyat chorrahasi,Eʼtiborga molik joylarni, Decent Hones Travel topishingiz mumkin!</p>
                 </div>
               </div>
             </div>
@@ -490,12 +495,7 @@ const Samarqand = () => {
               />
             </div>
             <div className="flex items-center justify-center mt-[48px]">
-              <button
-                className="py-[18px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white"
-                onClick={openModal}
-              >
-                Buyurtma qilish
-              </button>
+             
             </div>
           </div>
         </div>
@@ -555,7 +555,7 @@ const Samarqand = () => {
               </div>{" "}
               <>
                 <button onClick={closeModal}>Bekor qilish</button>
-                <button type="submit">Buyurtma qilish</button>
+                <button onClick={openTab}className="submit">Buyurtma qilish</button>
               </>
             </form>
           </div>

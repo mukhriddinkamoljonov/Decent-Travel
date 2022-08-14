@@ -85,7 +85,7 @@ const Umrah = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1030px] flex mt-[1430px] ml-[120px]">
+      <div className="w-[1030px] flex mt-[800px] ml-[120px]">
         <div className="">
           <img src={rasm1} className="w-[320px] h-[260px]" alt="" />
         </div>

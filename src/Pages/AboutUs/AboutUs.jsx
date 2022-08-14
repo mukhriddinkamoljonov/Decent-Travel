@@ -17,6 +17,8 @@ const AboutUs = () => {
                   <h1 className="city-head-title">Biz haqimizda</h1>
                   <p className="city-head-text">
                   Bizning kompaniyamiz orqali siz o'zingizga qulay bo'lgan Makka hamda Madina Shaxarlariga mexmonxona aviachiptalar hamda chiptalarini xarid qilishingiz mumkin.
+                  Har bir mehmon bizning do'stimiz va hamkorimiz!
+Biz mehmonlarimizga ularning talablari va ehtiyojlariga to'liq javob beradigan yuqori sifatli turistik mahsulotni taklif etamiz.
                   </p>
                 </div>
               </div>
@@ -65,7 +67,7 @@ const AboutUs = () => {
               </ul>
               <h2 className="location">Location:</h2>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.3286842601674!2d71.72562331539748!3d40.46799297935917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17743998326cd56a!2zNDDCsDI4JzA0LjgiTiA3McKwNDMnNDAuMSJF!5e0!3m2!1suz!2s!4v1659762465225!5m2!1suz!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.3286842601674!2d71.72562331539748!3d40.46799297935917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17743998326cd56a!2zNDDCsDI4JzA0LjgiTiA3McKwNDMnNDAuMSJF!5e0!3m2!1suz!2s!4v1660035881497!5m2!1suz!2s "
                 width="1130"
                 height="450"
                 style={{ border: 0 }}
@@ -74,6 +76,7 @@ const AboutUs = () => {
                 frameBorder="0"
                 title="location"
               ></iframe>
+              {/* hshdc */}
             </div>
           </div>
         </div>
