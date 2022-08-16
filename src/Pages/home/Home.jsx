@@ -74,7 +74,7 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
-                    <Link to="/samarqand">
+                    <Link to="/detailed">
                       <h1 className="card-title">Samarqand</h1>
                     </Link>
                   </div>{" "}
@@ -246,7 +246,7 @@ function Home() {
                 </div>
                 <div class="row-span-3 about-text">
                   <div>
-                    <p className="text-justify w-[350px]">{t("decent_info")}</p>
+                    <p>{t("decent_info")}</p>
                     <button>{t("learn_more")} </button>
                   </div>
                 </div>
