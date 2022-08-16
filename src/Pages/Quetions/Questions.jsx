@@ -310,7 +310,7 @@ const Questions = () => {
               </article>
             </div>
             <div className="mt-[40px]">
-              <div className="col-span-4 ">
+              <div className="col-span-4">
                 <div className="flex flex-col">
                   <Search />
                   <div className="bg-white transition duration-150 ease-out shadow-lg shadow-neutral-400/50 py-[24px] pl-9 rounded mt-[32px] max-w-[270px]">

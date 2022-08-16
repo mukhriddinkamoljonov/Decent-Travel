@@ -29,7 +29,7 @@ const Attractions = () => {
             <h1 className="text-center font-bold text-[48px]">
               Islom Karimov muzeyi
             </h1>
-            <p className="text-justify text-[22px] mt-[10px]">
+            <p className=" text-[22px] mt-[10px]">
               O‘zbekiston Respublikasi Birinchi Prezidentining hayoti va
               faoliyati haqida ko‘proq bilishni istaysizmi? Endi siz Islom
               Karimov nomidagi ilmiy-ma’rifiy yodgorlik majmuasi muzeyiga
@@ -40,7 +40,7 @@ const Attractions = () => {
               anjumanlar zaliga tashrif buyurishingiz mumkin.
             </p>
           </div>
-          <div className="h-[550px] mt-[30px]">
+          <div className="mt-[30px]">
             <img src={attractionimg1} alt="" />
           </div>
           <div className="mt-[20px]">
@@ -89,28 +89,16 @@ const Attractions = () => {
                 <div className="bg-white transition duration-150 ease-out shadow-lg shadow-neutral-400/50 py-[24px] pl-9 rounded mt-[32px] max-w-[270px]">
                   <ul className="not-italic  font-bold text-lg leading-6 flex flex-col gap-[18px]">
                     <li className="text-[#F3692E] cursor-pointer">
-                      Asosiy savollar
+                      Islom Karimov muzeyi
                     </li>
                     <li className="hover:text-[#F3692E] cursor-pointer">
-                      Passport
+                      Location
                     </li>
                     <li className="hover:text-[#F3692E] cursor-pointer">
-                      Viza
-                    </li>
-                    <li className="hover:text-[#F3692E] cursor-pointer">
-                      Registratsiya
-                    </li>
-                    <li className="hover:text-[#F3692E] cursor-pointer">
-                      Sug'urta
-                    </li>
-                    <li className="hover:text-[#F3692E] cursor-pointer">
-                      Turar joy
+                      Ko‘proq ko‘ring
                     </li>
                   </ul>
                 </div>
-                <button className="py-[18px] w-[270px] mt-[32px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
-                  Buyurtma qilish
-                </button>
               </div>
             </div>
           </div>
@@ -122,4 +110,3 @@ const Attractions = () => {
 };
 
 export default Attractions;
-
