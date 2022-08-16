@@ -28,8 +28,7 @@ const Contacts = () => {
         <div className="flex-initial w-[450px]">
           <p className="text-justify">
           Decent Honest Travel kompaniyasi O'zbekiston Turizm xizmatlari bozorida yangi hisoblanadi. Hozirgi kunda o'z ishiga ma'suliyat bilan yondoshadigan professional xodimlar sizga dunyoning istalgan mintaqasiga turistik yo'llanmalar hamda qulay yo'nalishdagi aviachiptalar taklif qilish salohiyatiga ega. Shu bilan birga O'zbekistondagi vatandoshlarimizga hamda qo'shni mamlakat Musulmon axliga 2022 yildan boshlab Umra hamda Haj safarlarini amalga oshirishda ko'makdosh bo'lib kelmoqda.Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!
-=======
-          Decent Honest Travel kompaniyasi O'zbekiston Turizm xizmatlari bozorida yangi hisoblanadi. Hozirgi kunda o'z ishiga ma'suliyat bilan yondoshadigan rofessional xodimlar sizga dunyoning istalgan mintaqasiga turistik yo'llanmalar hamda qulay yo'nalishdagi aviachiptalar taklif qilish salohiyatiga ega. Shu bilan birga O'zbekistondagi vatandoshlarimizga hamda qo'shni mamlakat Musulmon axliga 2022 yildan boshlab Umra hamda Haj safarlarini amalga oshirishda ko'makdosh bo'lib kelmoqda. Bizning kompaniyamiz orqali siz o'zingizga qulay bo'lgan Makka hamda Madina Shaxarlariga mexmonxona aviachiptalar hamda chiptalarini xarid qilishingiz mumkin.
+
           </p>
 
           <div className="mt-[80px]">
