@@ -24,10 +24,9 @@ const Questions = () => {
           <div className="question-bc">
             <div className="cites-content">
               <div className="mt-[28px]">
-                <h1 className="city-head-title">Ko'p so'raladigan savollar</h1>
+                <h1 className="city-head-title">{t("questions")} </h1>
                 <p className="city-head-text">
-                  Turistlarning O‘zbekiston bo‘ylab sayohatga oid tez-tez
-                  so‘raladigan savollari
+                  {t("surveyQuestions")}
                 </p>
               </div>
             </div>
@@ -36,14 +35,14 @@ const Questions = () => {
         <div className="cites-content">
           <div className="question-content-main flex">
             <div className="flex-auto w-96">
-              <h1>Asosiy savollar</h1>
+              <h1>{t("basicQuestions")} </h1>
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded(!expanded)}
                     className="question-title"
                   >
-                    O'zbekiston qayerda joylashgan?
+                   {t("uzbekistanLocated")}
                   </h4>
                   <button
                     className="btn"
@@ -73,7 +72,7 @@ const Questions = () => {
                     onClick={() => setExpanded1(!expanded1)}
                     className="question-title"
                   >
-                    Sizning milliy oshxonangiz qanday?{" "}
+                    {t("kitchen")}{" "}
                   </h4>
                   <button
                     className="btn"
@@ -93,15 +92,14 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">Passport </h2>
+              <h2 className="location">{t("passport")}  </h2>
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded2(!expanded2)}
                     className="question-title"
                   >
-                    O‘zbekistonga sayohat uchun pasport/xalqaro pasportning amal
-                    qilish muddati qancha?{" "}
+                    {t("international")}{" "}
                   </h4>
                   <button
                     className="btn"
@@ -127,8 +125,7 @@ const Questions = () => {
                     onClick={() => setExpanded3(!expanded3)}
                     className="question-title"
                   >
-                    Sayohat paytida pasport yo'qolgan yoki o'g'irlangan. Nima
-                    qilish kerak?
+                    {t("lost")}
                   </h4>
                   <button
                     className="btn"
@@ -148,67 +145,16 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">Viza </h2>{" "}
-              <article className="question">
-                <header>
-                  <h4
-                    onClick={() => setExpanded4(!expanded4)}
-                    className="question-title"
-                  >
-                    O‘zbekistonga sayohat uchun pasport/xalqaro pasportning amal
-                    qilish muddati qancha?
-                  </h4>
-                  <button
-                    className="btn"
-                    onClick={() => setExpanded4(!expanded4)}
-                  >
-                    {expanded ? <Close /> : <AddIcon />}
-                  </button>
-                </header>
-                {expanded4 && (
-                  <>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa iste voluptate inventore accusamus hic, repudiandae
-                      accusantium consequuntur sint nobis alias, fugiat quia?
-                      Vel, harum magni sint eos mollitia aperiam iure.
-                    </p>
-                  </>
-                )}
-              </article>{" "}
-              <article className="question">
-                <header>
-                  <h4
-                    onClick={() => setExpanded5(!expanded5)}
-                    className="question-title"
-                  >
-                    Sizning milliy oshxonangiz qanday?
-                  </h4>
-                  <button
-                    className="btn"
-                    onClick={() => setExpanded5(!expanded5)}
-                  >
-                    {expanded ? <Close /> : <AddIcon />}
-                  </button>
-                </header>
-                {expanded5 && (
-                  <>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa iste voluptate inventore accusamus hic, repudiandae
-                      accusantium consequuntur sint nobis alias, fugiat quia?
-                      Vel, harum magni sint eos mollitia aperiam iure.
-                    </p>
-                  </>
-                )}
-              </article>{" "}
+              <h2 className="location">{t("viza")}</h2>{" "}
+              
+             
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded6(!expanded6)}
                     className="question-title"
                   >
-                    O'zbekistonda eng katta bayram qaysi?{" "}
+                    {t("term")} {" "}
                   </h4>
                   <button
                     className="btn"
@@ -228,15 +174,14 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">Registratsiya</h2>{" "}
+              <h2 className="location">{t("signUp")} </h2>{" "}
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded7(!expanded7)}
                     className="question-title"
                   >
-                    O‘zbekistonga sayohat uchun pasport/xalqaro pasportning amal
-                    qilish muddati qancha?
+                    {t("holiday")}
                   </h4>
                   <button
                     className="btn"
@@ -256,39 +201,14 @@ const Questions = () => {
                   </>
                 )}
               </article>{" "}
-              <article className="question">
-                <header>
-                  <h4
-                    onClick={() => setExpanded8(!expanded8)}
-                    className="question-title"
-                  >
-                    Sizning milliy oshxonangiz qanday?
-                  </h4>
-                  <button
-                    className="btn"
-                    onClick={() => setExpanded8(!expanded8)}
-                  >
-                    {expanded ? <Close /> : <AddIcon />}
-                  </button>
-                </header>
-                {expanded8 && (
-                  <>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa iste voluptate inventore accusamus hic, repudiandae
-                      accusantium consequuntur sint nobis alias, fugiat quia?
-                      Vel, harum magni sint eos mollitia aperiam iure.
-                    </p>
-                  </>
-                )}
-              </article>{" "}
+              
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded9(!expanded9)}
                     className="question-title"
                   >
-                    O'zbekistonda eng katta bayram qaysi?{" "}
+                    {t("border")}
                   </h4>
                   <button
                     className="btn"
@@ -316,27 +236,22 @@ const Questions = () => {
                   <div className="bg-white transition duration-150 ease-out shadow-lg shadow-neutral-400/50 py-[24px] pl-9 rounded mt-[32px] max-w-[270px]">
                     <ul className="not-italic  font-bold text-lg leading-6 flex flex-col gap-[18px]">
                       <li className="text-[#F3692E] cursor-pointer">
-                        Asosiy savollar
+                        {t("basicQuestions")}
                       </li>
                       <li className="hover:text-[#F3692E] cursor-pointer">
-                        Passport
+                        {t("passport")}
                       </li>
                       <li className="hover:text-[#F3692E] cursor-pointer">
-                        Viza
+                        {t("viza")}
                       </li>
                       <li className="hover:text-[#F3692E] cursor-pointer">
-                        Registratsiya
+                        {t("signUp")}
                       </li>
-                      <li className="hover:text-[#F3692E] cursor-pointer">
-                        Sug'urta
-                      </li>
-                      <li className="hover:text-[#F3692E] cursor-pointer">
-                        Turar joy
-                      </li>
+                      
                     </ul>
                   </div>
                   <button className="py-[18px] w-[270px] mt-[32px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
-                    Buyurtma qilish
+                    {t("send_request")}
                   </button>
                 </div>
               </div>
