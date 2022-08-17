@@ -14,10 +14,9 @@ const AboutUs = () => {
             <div className="city-bc">
               <div className="cites-content">
                 <div className="mt-24">
-                  <h1 className="city-head-title">Biz haqimizda</h1>
+                  <h1 className="city-head-title">{t("aboutUs")}</h1>
                   <p className="city-head-text">
-                  Bizning kompaniyamiz orqali siz o'zingizga qulay bo'lgan Makka hamda Madina Shaharlariga mexmonxona aviachiptalar hamda chiptalarini xarid qilishingiz mumkin.
-                  
+                  {t("ourCompany")}
                   </p>
                 </div>
               </div>
@@ -25,43 +24,28 @@ const AboutUs = () => {
           </div>
           <div className="about-content">
             <div className="about-content-main">
-            <h1 className="info_text">"Decent Honest Travel” sayyohlik kompaniyasining axborot saytiga xush kelibsiz!</h1>
+            <h1 className="info_text">{t("informationSite")}</h1>
               <ul>
                 <li>
-                  ✔️ Decent Honest Travel kompaniyasi O‘zbekiston sayyohlik
-                  xizmatlari bozorida yangi hisoblanadi.
+                  {t("newMarket")}
                 </li>
                 <li>
-                  ✔️ Decent Honest Travel kompaniyasining asosiy yo‘nalishlari
-                  mamlakatimizning tarixiy joylari, eng maftunkor go‘shalariga
-                  va bir qancha chet el davlatlariga maroqli sayohat
-                  uyushtirishingiz mumkin..
+                 {t("haveniceTrip")}
                 </li>
                 <li>
-                  ✔️ Kompaniyaning rivojlanishi bilan sayyohlik yo'nalishlari
-                  geografiyasi kengayadi. Bizning arsenalimiz ham guruh, ham
-                  individual ekskursiyalar o'z ichiga oladi.
+                  {t("touristDestinations")}
                 </li>
                 <li>
-                  ✔️ Har bir mehmon bizning do'stimiz va hamkorimiz! Biz
-                  mehmonlarimizga ularning talablari va ehtiyojlariga to'liq
-                  javob beradigan yuqori sifatli turistik mahsulotni taklif
-                  etamiz.
+                  {t("ourFriend")}
                 </li>
               </ul>
               <img src={person} alt="person" className="" />
               <ul className="mt-5">
                 <li>
-                  Sayohat - bu hayotingizning eng yaxshi vaqti! Shuning uchun
-                  biz hayotni sevadigan odamlar tomonidan ataylab tanlanganmiz.
-                  Ular uchun sayohat - bu yangi bilimlarni izlash, yangi hayot
-                  tajribasi, yangi his-tuyg'ularni o'zlashtirish.
+                  {t("goodTime")}
                 </li>
                 <li className="mt-10">
-                  Sizning sayohatingizni muhokama qilishdan xursandmiz. Istalgan
-                  vaqtda biz bilan bog'laning. Bizni tanlaganingiz uchun
-                  tashakkur. Biz har doim sizga qulay narxlardagi qulay
-                  mehmonxonalarni topishda yordam berishdan mamnunmiz.
+                  {t("discussion")}
                 </li>
               </ul>
               <h2 className="location">Location:</h2>

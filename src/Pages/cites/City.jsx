@@ -19,11 +19,9 @@ const City = () => {
             <div className="city-bc">
               <div className="cites-content">
                 <div className="mt-12">
-                  <h1 className="city-head-title">Barcha Turistik shaharlar</h1>
+                  <h1 className="city-head-title">{t("touristTowns")}</h1>
                   <p className="city-head-text">
-                    With travala you can experience new travel and the best
-                    tourist destinations that we have to offer tourist
-                    destinations that we have to offer
+                    {t("suggestionsUs")}
                   </p>
                 </div>
               </div>
@@ -31,13 +29,9 @@ const City = () => {
           </div>
           <div className="cites-content">
             <div className="city-content-main">
-              <h1 className="">O'zbekistonning turistik shaharlari</h1>
+              <h1 className="">{t("worldWtour")}</h1>
               <p>
-                O'zbekistonning tarixiy shaharlari Ushbu bo'limda biz sizni
-                O'zbekistonning Toshkent, Samarqand, Buxoro, Xiva, Shahrisabz
-                kabi qadimiy shaharlari bilan yaqinroq tanishtiramiz. Bir
-                paytlar Buyuk Ipak yo‘lining bir qismi bo‘lgan mamlakatimizning
-                yorqin shaharlari bir ming yildan ortiq tarixga ega.
+              {t("travel")}
               </p>
               <div className="mt-14 grid grid-cols-4 gap-2">
                 <div className="card-item">

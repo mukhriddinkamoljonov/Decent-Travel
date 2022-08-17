@@ -13,11 +13,9 @@ const Attractions = () => {
         <div className="city-bc">
           <div className="cites-content">
             <div className="mt-24">
-              <h1 className="city-head-title">Diqqatga sazovor joylar</h1>
+              <h1 className="city-head-title">{t("attraction")}</h1>
               <p className="city-head-text">
-                With travala you can experience new travel and the best tourist
-                destinations that we have to offer tourist destinations that we
-                have to offer
+              {t("differentDirections")}
               </p>
             </div>
           </div>
@@ -27,17 +25,10 @@ const Attractions = () => {
         <div className="flex-auto w-96">
           <div className="mt-[20px]">
             <h1 className="text-center font-bold text-[48px]">
-              Islom Karimov muzeyi
+              {t("karimovMuseum")}
             </h1>
             <p className=" text-[22px] mt-[10px]">
-              O‘zbekiston Respublikasi Birinchi Prezidentining hayoti va
-              faoliyati haqida ko‘proq bilishni istaysizmi? Endi siz Islom
-              Karimov nomidagi ilmiy-ma’rifiy yodgorlik majmuasi muzeyiga
-              tashrif buyurishingiz mumkin. Muzeyning eski nomi - "Oqsaroy
-              Rezidensiyasi" ("Oq saroy"), bu yerda Islom Karimov bir paytlar
-              siyosiy faoliyatini olib borgan va ishlagan. Hashamatli saroyda,
-              muzeydan tashqari, kutubxona va o‘quv zali, ilmiy markaz va
-              anjumanlar zaliga tashrif buyurishingiz mumkin.
+              {t("firstPresident")}
             </p>
           </div>
           <div className="mt-[30px]">
@@ -45,25 +36,12 @@ const Attractions = () => {
           </div>
           <div className="mt-[20px]">
             <p className="text-justify text-[22px] mt-[10px]">
-              Muzey eksponatlari rezidentsiya zallarida joylashgan. Birinchi
-              zalda siz fotosuratlar, hujjatlar va hatto prezidentning shaxsiy
-              buyumlarini ko‘rishingiz mumkin. Ikkinchi xonada siz Islom Karimov
-              asarlari to‘plamlari bilan tanishasiz. Qizig‘i shundaki,
-              prezidentning o‘zi hech qachon rassomlar va fotosuratchilar uchun
-              suratga tushmagan.
+              {t("museumExhibits")}
             </p>
             <p className="text-justify text-[22px] mt-[15px]">
-              Ba’zi rasmlar juda qiziq, siz Islom Karimovni g‘ayrioddiy holda
-              ko‘rishingiz mumkin, ularning syujetlari afsonaviy ertaklarga
-              o‘xshaydi. Muzeyda shuningdek, smart ekranlar o‘rnatilgan,
-              ularning yordami bilan siz Islom Karimov hayotidan qiziqarli
-              ma’lumotlar bilan tanishishingiz mumkin.
+              {t("unusuaPpictures")}
             </p>
-            <p className="text-justify text-[22px] mt-[15px]">
-              Majmua markazida piyodalar yo‘laklari va gul bilan o‘ralgan
-              chiroyli bog‘ga ega. Saroy yonidagi balandlikda Islom Karimovning
-              bronza haykali joylashgan.
-            </p>
+           
           </div>
           <div className="mt-[20px]">
             <span className="text-[#F3692E]">Location:</span>
