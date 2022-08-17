@@ -15,38 +15,24 @@ const AboutUs = () => {
               <div className="cites-content">
                 <div className="mt-24">
                   <h1 className="city-head-title">{t("aboutUs")}</h1>
-                  <p className="city-head-text">
-                  {t("ourCompany")}
-                  </p>
+                  <p className="city-head-text">{t("ourCompany")}</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="about-content">
             <div className="about-content-main">
-            <h1 className="info_text">{t("informationSite")}</h1>
+              <h1 className="info_text">{t("informationSite")}</h1>
               <ul>
-                <li>
-                  {t("newMarket")}
-                </li>
-                <li>
-                 {t("haveniceTrip")}
-                </li>
-                <li>
-                  {t("touristDestinations")}
-                </li>
-                <li>
-                  {t("ourFriend")}
-                </li>
+                <li>{t("newMarket")}</li>
+                <li>{t("haveniceTrip")}</li>
+                <li>{t("touristDestinations")}</li>
+                <li>{t("ourFriend")}</li>
               </ul>
               <img src={person} alt="person" className="" />
               <ul className="mt-5">
-                <li>
-                  {t("goodTime")}
-                </li>
-                <li className="mt-10">
-                  {t("discussion")}
-                </li>
+                <li>{t("goodTime")}</li>
+                <li className="mt-10">{t("discussion")}</li>
               </ul>
               <h2 className="location">Location:</h2>
               <iframe
@@ -59,7 +45,6 @@ const AboutUs = () => {
                 frameBorder="0"
                 title="location"
               ></iframe>
-              {/* hshdc */}
             </div>
           </div>
         </div>

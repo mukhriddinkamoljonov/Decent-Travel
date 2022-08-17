@@ -28,7 +28,6 @@ function App({ component: Component, pageProps }) {
   return (
     <>
       <Layout>
-        {/* <Component {...pageProps} /> */}
         <div className="container">
           <Routes>
             {Main.map((page) => (
