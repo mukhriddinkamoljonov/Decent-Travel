@@ -24,7 +24,7 @@ i18n
     react: { useSuspense: false },
   });
 
-function App({ component: Component, pageProps }) {
+function App() {
   return (
     <>
       <Layout>
