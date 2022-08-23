@@ -8,6 +8,7 @@ import rus from "../../assets/rus.svg";
 import arb from "../../assets/arb.svg";
 import { FlagIcon, Logo, UzbFlag } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
+import "./navbar.css"
 
 const languages = [
   {
@@ -52,7 +53,7 @@ function Navbar() {
       <Disclosure as="nav" className="bg-gray-800 top-0">
         {({ open }) => (
           <>
-            <div className="mx-auto z-50 absolute w-full">
+            <div className=" mx-auto z-50 absolute w-full">
               <div className="relative flex items-center justify-between h-16 ml-25">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}

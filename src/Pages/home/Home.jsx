@@ -45,7 +45,7 @@ function Home() {
     <div className="home">
       <Fullpage>
         <div className="sectionNav">
-          <FullpageNavigation style={{ zIndex: "-1" }} />
+          <FullpageNavigation style={{zIndex: "-1" }} />
         </div>
         <FullPageSections>
           <FullpageSection style={{ SectionStyle }}>
