@@ -82,4 +82,73 @@
   margin: auto;
 }
 
-/* sdfsdf */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header-content {
+    padding-left: 17px !important;
+  }
+  .first-text {
+    font-size: 14px !important;
+    width: 300px !important;
+  }
+  .main-text {
+    font-size: 45px !important;
+    width: 382px !important;
+  }
+  .last-text {
+    width: 366px !important;
+  }
+  .header-content button {
+    width: 120px !important;
+    height: 48px !important;
+    font-size: 14px !important;
+  }
+  .center-text {
+    font-size: 35px !important;
+  }
+  .center-text-line {
+    width: 281px !important;
+  }
+  .card_content {
+    margin-top: 20px !important;
+    padding-left: 173px !important;
+    grid-template-columns: repeat(2, minmax(184px, 1fr)) !important;
+  }
+  .card-title {
+    font-size: 24px !important;
+    margin-left: 8px;
+  }
+  .card-image img {
+    width: 170px !important;
+  }
+  .example_Section {
+    height: 100% !important;
+    width: 100%;
+    display: flex !important  ;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .home_umrah_content {
+    padding-left: 12px !important;
+  }
+  .home_urmrah_title {
+    font-size: 41px !important;
+    width: 400px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -64,12 +64,12 @@ function Home() {
               </div>
             </div>
           </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          <FullpageSection style={{ SectionStyle }} className="example_Section">
             <div className="header_section-two">
               <div className="home_cards">
                 <h1 className="center-text">{t("turist_city")}</h1>
                 <div className="center-text-line" />
-                <div className="card_content grid grid-cols-4 gap-1">
+                <div className="card_content grid gap-1">
                   <div className="card-item">
                     <div className="card-image">
                       <img src={samarqand} alt="" />
