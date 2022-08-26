@@ -74,6 +74,7 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
+                    {/* link */}
                     <Link to="/detailed">
                       <h1 className="card-title">Samarqand</h1>
                     </Link>
