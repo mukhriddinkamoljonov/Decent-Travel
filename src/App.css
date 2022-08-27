@@ -144,6 +144,83 @@
     width: 135px;
     height: 56px;
   }
+  .home_carousel {
+    padding-left: 17px !important;
+    padding-right: 0 !important;
+    padding-top: 30px !important;
+  }
+
+  .center-text {
+    font-size: 32px !important;
+    /* width: 350px !important; */
+  }
+
+  .carousel-text-line {
+    width: 368px !important;
+  }
+
+  .center-text_3 {
+    font-size: 32px !important;
+  }
+
+  .center-text-line_3 {
+    width: 226px !important;
+    margin-bottom: -89px;
+  }
+  .center-text_4 {
+    font-size: 33px !important;
+  }
+  .center-text-line_4 {
+    width: 211px !important;
+  }
+  .home_about-content {
+    grid-template-rows: repeat(1, minmax(200px, 1fr));
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+  .about-image_1 {
+    width: 338px;
+    height: 201px;
+  }
+  .about-img {
+    width: 160px;
+    height: 160px;
+    margin-top: -60px;
+    display: flex;
+  }
+  .about-text {
+    margin-top: 10px;
+    width: 345px !important;
+  }
+  .about-text p {
+    font-size: 14px !important;
+  }
+  .about-text button {
+    margin-top: 30px;
+    width: 155px;
+    height: 50px;
+  }
+
+  .home_contact_content {
+    text-align: left;
+    padding-top: 90px;
+    padding-left: 24px;
+    padding-right: 0px;
+  }
+  .center-text_5 {
+    font-size: 33px !important;
+  }
+  .center-text-line_5 {
+    width: 223px !important;
+  }
+  .home-contect-items {
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding-left: 28px !important;
+    padding-right: 0 !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -156,6 +233,49 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .home_about-content {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: column;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .about-image_1 {
+    grid-column: span 2 / span 2;
+    width: 550px;
+    height: 280px;
+  }
+  .about-img {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    display: flex;
+    width: 300px;
+    height: 265px;
+    margin-top: -60px;
+  }
+  .about-text {
+    grid-row: span 3 / span 3;
+  }
+  .about-text button {
+    margin-top: 25px;
+    width: 162px;
+    height: 56px;
+  }
+  .home_contact_content {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+  }
+  .home-contect-items {
+    margin-bottom: 2.75rem;
+    margin-left: 7rem;
+  }
+  .footer-content {
+    display: flex;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
