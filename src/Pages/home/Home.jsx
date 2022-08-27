@@ -29,7 +29,6 @@ import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Footer from "../../Components/footer/Footer";
 
 const SectionStyle = {
   height: "100vh",
