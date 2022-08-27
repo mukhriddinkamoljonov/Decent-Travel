@@ -7,14 +7,14 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         {/* // You need to write the footer part of the website */}
-        <div className="footer-content flex">
+        <div className="footer-content">
           <div className="mr-30">
             <div className="footer-content-log">
               <Logo />
             </div>
             <p className="">
               With travala you can experience new travel and the best tourist{" "}
-              destinations that we have to offer
+              destinations that we have to offer.
             </p>
           </div>
           <div className="footer-nav">
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>{" "}
           <div className="footer-nav">
-            <h3 className="footer-content-head-text">Services</h3>
+            <h3 className="footer-content-head-text">About</h3>
             <div>
               <ul className="footer-content-list">
                 <li>About</li>

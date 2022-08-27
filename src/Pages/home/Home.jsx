@@ -29,6 +29,7 @@ import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Footer from "../../Components/footer/Footer";
 
 const SectionStyle = {
   height: "100vh",
@@ -144,7 +145,7 @@ function Home() {
               <hr className="carousel-text-line" />
               <div className="home_carousel_content">
                 <Swiper
-                  slidesPerView={3}
+                  slidesPerView={1}
                   spaceBetween={30}
                   slidesPerGroup={1}
                   loop={true}
@@ -236,15 +237,15 @@ function Home() {
             <div className="home_about">
               <h1 className="center-text_4">{t("about_Us")} </h1>
               <hr className="center-text-line_4" />
-              <div class="grid grid-rows-3 grid-flow-col gap-4 home_about-content">
-                <div class="col-span-2 about-image_1">
+              <div class="home_about-content">
+                <div class="about-image_1">
                   <img src={about1} alt="" />
                 </div>
-                <div class="row-span-2 col-span-2 about-img">
+                <div class="about-img">
                   <img src={about2} alt="" />
                   <img src={about3} alt="" />
                 </div>
-                <div class="row-span-3 about-text">
+                <div class="about-text">
                   <div>
                     <p>{t("decent_info")}</p>
                     <button>{t("learn_more")} </button>
@@ -257,7 +258,7 @@ function Home() {
             <div className="home_contact">
               <h1 className="center-text_5">{t("our_contacts")} </h1>
               <hr className="center-text-line_5" />
-              <div className="home_contact_content flex">
+              <div className="home_contact_content">
                 <div className="">
                   <div className="flex">
                     <span>
@@ -273,7 +274,7 @@ function Home() {
                     <p>99890 580-25-05 </p>
                   </div>
                 </div>
-                <div className="mb-11 ml-25">
+                <div className="home-contect-items">
                   <div className="flex">
                     <span>
                       <MessengeIcon />
@@ -291,6 +292,7 @@ function Home() {
               </div>
               <button>{t("send_request")} </button>
             </div>
+            {/* <Foo  ter /> */}
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
