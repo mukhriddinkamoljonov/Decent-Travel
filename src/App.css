@@ -144,6 +144,20 @@
     width: 135px;
     height: 56px;
   }
+  .home_carousel {
+    padding-left: 17px !important;
+    padding-right: 0 !important;
+    padding-top: 30px !important;
+  }
+
+  .center-text {
+    font-size: 32px !important;
+    /* width: 350px !important; */
+  }
+
+  .carousel-text-line {
+    width: 368px !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
