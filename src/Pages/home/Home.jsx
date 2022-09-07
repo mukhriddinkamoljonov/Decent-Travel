@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
 import "./Home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import samarqand from "../../assets/Images/samarqand.png";
 import xiva from "../../assets/Images/xiva.png";
 import namangan from "../../assets/Images/namangan.png";
@@ -39,6 +41,9 @@ const SectionStyle = {
 };
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { t } = useTranslation();
 
   return (
@@ -51,7 +56,13 @@ function Home() {
           <FullpageSection style={{ SectionStyle }}>
             <div className="header_section-one">
               <div className="header-bc">
-                <div className="header-content">
+                <div
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="1500"
+                  className="header-content"
+                >
                   <p className="first-text">{t("the_best")}</p>
                   <h1 className="main-text">{t("best_travel")}</h1>
                   <p className="last-text">
@@ -69,7 +80,10 @@ function Home() {
               <div className="home_cards">
                 <h1 className="center-text">{t("turist_city")}</h1>
                 <div className="center-text-line" />
-                <div className="card_content grid gap-1">
+                <div
+                  data-aos="zoom-out-left"
+                  className="card_content grid gap-1"
+                >
                   <div className="card-item">
                     <div className="card-image">
                       <img src={samarqand} alt="" />
