@@ -56,6 +56,7 @@ function Home() {
         console.log(error);
       });
   }, []);
+  
   console.log(items);
   useEffect(() => {
     Aos.init();
