@@ -233,20 +233,6 @@ div {
   padding-top: 70px;
 }
 
-.mySwiper {
-  /* margin-top: 0px; */
-}
-.carousel-content {
-}
-
-.swiper-wrapper {
-  width: 100px !important;
-}
-
-.carousel-item {
-  /* width: 400px; */
-}
-
 .carousel_image img {
   width: 330px;
   border-radius: 8px;
