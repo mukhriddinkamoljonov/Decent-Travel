@@ -8,6 +8,7 @@ import rus from "../../assets/rus.svg";
 import arb from "../../assets/arb.svg";
 import { FlagIcon, Logo, UzbFlag } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
+import "./navbar.css";
 
 const languages = [
   {

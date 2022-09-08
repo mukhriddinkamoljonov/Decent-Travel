@@ -76,7 +76,9 @@ const Samarqand = () => {
   };
 
   function openTab() {
-    window.open('https://my.click.uz/services/pay?service_id=24635&merchant_id=17174&amount=1000&transaction_param=test');
+    window.open(
+      "https://my.click.uz/services/pay?service_id=24635&merchant_id=17174&amount=1000&transaction_param=test"
+    );
   }
 
   return (
@@ -88,7 +90,10 @@ const Samarqand = () => {
               <div className="cites-content">
                 <div className="mt-12">
                   <h1 className="city-head-title">Samarqand</h1>
-                  <p className="city-head-text">Madaniyat chorrahasi,Eʼtiborga molik joylarni, Decent Hones Travel topishingiz mumkin!</p>
+                  <p className="city-head-text">
+                    Madaniyat chorrahasi,Eʼtiborga molik joylarni, Decent Hones
+                    Travel topishingiz mumkin!
+                  </p>
                 </div>
               </div>
             </div>
@@ -494,9 +499,7 @@ const Samarqand = () => {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center mt-[48px]">
-             
-            </div>
+            <div className="flex items-center justify-center mt-[48px]"></div>
           </div>
         </div>
       </div>
@@ -555,7 +558,9 @@ const Samarqand = () => {
               </div>{" "}
               <>
                 <button onClick={closeModal}>Bekor qilish</button>
-                <button onClick={openTab}className="submit">Buyurtma qilish</button>
+                <button onClick={openTab} className="submit">
+                  Buyurtma qilish
+                </button>
               </>
             </form>
           </div>
