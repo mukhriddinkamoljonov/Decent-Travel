@@ -10,7 +10,7 @@
   line-height: 120%;
   letter-spacing: 0.005em;
   color: #0e0e2c;
- 
+  /* border-bottom: 4px solid   #f3692e; */
 }
 
 .center-text-line {
@@ -20,7 +20,7 @@
   background: #f3692e;
   border-radius: 8px;
   margin: auto;
-  
+  /* ksdfkj */
 }
 
 .carousel-text-line {
@@ -268,11 +268,69 @@
   .city-cards {
     margin-top: 20px !important;
     grid-template-columns: repeat(2, minmax(184px, 1fr)) !important;
-    margin-left: 12px;
   }
   .city-title {
     font-size: 27px !important;
     margin-left: 10px !important;
+  }
+  .about-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .about-content ul li {
+    width: 370px;
+    text-align: justify;
+    margin-left: 5px;
+  }
+  .about-content-main h1 {
+    text-align: center;
+    font-size: 23px;
+    width: 350px;
+    color: #f3692e;
+    font-family: cursive;
+  }
+
+  iframe {
+    width: 380px;
+    margin-left: 7px;
+  }
+  .location {
+    margin: -15px 0 10px 150px !important;
+  }
+  .about-content img {
+    min-width: 380px;
+    margin-left: 5px;
+  }
+  .cites-content {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .forma {
+    width: 380px !important;
+    height: 392px;
+    background: #ffffff;
+    border-radius: 16px;
+    margin-left: 0 !important;
+  }
+  form input {
+    margin-top: 5px;
+    background: #f6f8fa;
+    outline: none;
+    border: 1px solid #eff3f8;
+    border-radius: 5px;
+    width: 340px !important;
+  }
+  form div {
+    margin-bottom: 0;
+  }
+  form {
+    padding: 40px;
+  }
+  .formtext {
+    width: 380px !important;
+    margin-top: 20px;
   }
 }
 
