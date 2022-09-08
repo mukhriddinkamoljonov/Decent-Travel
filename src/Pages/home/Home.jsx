@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useEffect } from "react";
-=======
-import React, { useEffect, useState } from "react";
->>>>>>> a73a6bb4ac2300b661dacd5851531b9609f3df7b
 import Fullpage, {
   FullPageSections,
   FullpageSection,
@@ -35,7 +31,6 @@ import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 const SectionStyle = {
   height: "100vh",
@@ -50,21 +45,7 @@ function Home() {
     AOS.init();
   }, []);
   const { t } = useTranslation();
-  const [items, setItems] = useState([]);
-  const [isReady, setIsReady] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(`http://46.101.191.246:5000/api/places/sort/:1`)
-      .then((res) => {
-        setItems(res.data);
-        setIsReady(true);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-  console.log(items);
   return (
     <div className="home">
       <Fullpage>
@@ -107,7 +88,6 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
-                    {/* link */}
                     <Link to="/detailed">
                       <h1 className="card-title">Samarqand</h1>
                     </Link>
@@ -116,57 +96,43 @@ function Home() {
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <Link to="/detailed">
-                      <h1 className="card-title">Farg'ona</h1>
-                    </Link>
+                    <h1 className="card-title">Farg'ona</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <Link to="/detailed">
-                      <h1 className="card-title">Buxoro</h1>
-                    </Link>
+                    <h1 className="card-title">Buxoro</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <Link to="/detailed">
-                      <h1 className="card-title">Xorazm</h1>
-                    </Link>
+                    <h1 className="card-title">Xorazm</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <Link to="/detailed">
-                      <h1 className="card-title">Samarqand</h1>
-                    </Link>
+                    <h1 className="card-title">Samarqand</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={namangan} alt="" />
                     </div>
-                    <Link to="/detailed">
-                      <h1 className="card-title">Toshkent</h1>
-                    </Link>
+                    <h1 className="card-title">Toshkent</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={fargona} alt="" />
-                    </div>{" "}
-                    <Link to="/detailed">
-                      <h1 className="card-title">Surhandaryo</h1>
-                    </Link>
+                    </div>
+                    <h1 className="card-title">Surhandaryo</h1>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={samarqand} alt="" />
-                    </div>{" "}
-                    <Link to="/detailed">
-                      <h1 className="card-title">Samarqand</h1>
-                    </Link>
+                    </div>
+                    <h1 className="card-title">Samarqand</h1>
                   </div>
                 </div>
               </div>
@@ -181,10 +147,7 @@ function Home() {
                 <div className="home_urmrah_content_text">
                   <h1 className="home_urmrah_title">{t("umrah_name")}</h1>
                   <p className="home_urmrah_text">{t("umrah_text")}</p>
-                  <button className="home_urmrah_button">
-                    {" "}
-                    <Link to="/umrah">{t("see_all")}</Link>
-                  </button>
+                  <button className="home_urmrah_button">{t("see_all")}</button>
                 </div>
               </div>
             </div>
