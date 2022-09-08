@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
 import "./Home.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import samarqand from "../../assets/Images/samarqand.png";
 import xiva from "../../assets/Images/xiva.png";
 import namangan from "../../assets/Images/namangan.png";
@@ -31,6 +29,8 @@ import "swiper/css/navigation";
 import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import Aos from "aos";
 
 const SectionStyle = {
   height: "100vh",
@@ -41,11 +41,25 @@ const SectionStyle = {
 };
 
 function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const { t } = useTranslation();
+  const [items, setItems] = useState([]);
+  const [isReady, setIsReady] = useState(null);
 
+  useEffect(() => {
+    axios
+      .get(`http://46.101.191.246:5000/api/places/sort/:1`)
+      .then((res) => {
+        setItems(res.data);
+        setIsReady(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  console.log(items);
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="home">
       <Fullpage>
@@ -56,13 +70,7 @@ function Home() {
           <FullpageSection style={{ SectionStyle }}>
             <div className="header_section-one">
               <div className="header-bc">
-                <div
-                  data-aos="fade-left"
-                  data-aos-anchor="#example-anchor"
-                  data-aos-offset="500"
-                  data-aos-duration="1500"
-                  className="header-content"
-                >
+                <div className="header-content">
                   <p className="first-text">{t("the_best")}</p>
                   <h1 className="main-text">{t("best_travel")}</h1>
                   <p className="last-text">
@@ -80,14 +88,12 @@ function Home() {
               <div className="home_cards">
                 <h1 className="center-text">{t("turist_city")}</h1>
                 <div className="center-text-line" />
-                <div
-                  data-aos="zoom-out-left"
-                  className="card_content grid gap-1"
-                >
+                <div className="card_content grid gap-1">
                   <div className="card-item">
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
+                    {/* link */}
                     <Link to="/detailed">
                       <h1 className="card-title">Samarqand</h1>
                     </Link>
@@ -96,43 +102,57 @@ function Home() {
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Farg'ona</h1>
+                    <Link to="/detailed">
+                      <h1 className="card-title">Farg'ona</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Buxoro</h1>
+                    <Link to="/detailed">
+                      <h1 className="card-title">Buxoro</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Xorazm</h1>
+                    <Link to="/detailed">
+                      <h1 className="card-title">Xorazm</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={xiva} alt="" />
                     </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    <Link to="/detailed">
+                      <h1 className="card-title">Samarqand</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={namangan} alt="" />
                     </div>
-                    <h1 className="card-title">Toshkent</h1>
+                    <Link to="/detailed">
+                      <h1 className="card-title">Toshkent</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={fargona} alt="" />
-                    </div>
-                    <h1 className="card-title">Surhandaryo</h1>
+                    </div>{" "}
+                    <Link to="/detailed">
+                      <h1 className="card-title">Surhandaryo</h1>
+                    </Link>
                   </div>{" "}
                   <div className="card-item">
                     <div className="card-image">
                       <img src={samarqand} alt="" />
-                    </div>
-                    <h1 className="card-title">Samarqand</h1>
+                    </div>{" "}
+                    <Link to="/detailed">
+                      <h1 className="card-title">Samarqand</h1>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -147,7 +167,10 @@ function Home() {
                 <div className="home_urmrah_content_text">
                   <h1 className="home_urmrah_title">{t("umrah_name")}</h1>
                   <p className="home_urmrah_text">{t("umrah_text")}</p>
-                  <button className="home_urmrah_button">{t("see_all")}</button>
+                  <button className="home_urmrah_button">
+                    {" "}
+                    <Link to="/umrah">{t("see_all")}</Link>
+                  </button>
                 </div>
               </div>
             </div>
