@@ -55,7 +55,6 @@ function Home() {
         console.log(error);
       });
   }, []);
-  console.log(items);
   return (
     <div className="home">
       <Fullpage>
