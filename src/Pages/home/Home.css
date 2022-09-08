@@ -345,7 +345,7 @@ div {
 }
 
 @media (min-width: 350px) {
-  .header-content {
+  /* .header-content {
     margin-left: 10px;
     width: 370px;
     text-align: center;
@@ -396,29 +396,7 @@ div {
     color: #fff;
     background: #f36326cb;
     border-radius: 8px;
-  }
+  } */
 
   /* content-cards */
-
-  .card_content {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .card-image {
-    border-radius: 5.31456px;
-    z-index: 5;
-    /* width: 265px; */
-  }
-
-  .card-image img {
-    background: linear-gradient(
-      8.12deg,
-      #293748 -0.77%,
-      rgba(41, 55, 72, 0) 63.64%
-    );
-    object-fit: cover;
-    /* width: 250px; */
-    /* height: 240px; */
-  }
 }
