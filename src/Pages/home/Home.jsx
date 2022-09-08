@@ -45,7 +45,7 @@ function Home() {
     <div className="home">
       <Fullpage>
         <div className="sectionNav">
-          <FullpageNavigation style={{ zIndex: "-1" }} />
+          <FullpageNavigation style={{zIndex: "-1" }} />
         </div>
         <FullPageSections>
           <FullpageSection style={{ SectionStyle }}>
@@ -74,6 +74,7 @@ function Home() {
                     <div className="card-image">
                       <img src={samarqand} alt="" />
                     </div>
+                    {/* link */}
                     <Link to="/detailed">
                       <h1 className="card-title">Samarqand</h1>
                     </Link>

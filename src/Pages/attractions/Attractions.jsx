@@ -14,22 +14,18 @@ const Attractions = () => {
           <div className="cites-content">
             <div className="mt-24">
               <h1 className="city-head-title">{t("attraction")}</h1>
-              <p className="city-head-text">
-              {t("differentDirections")}
-              </p>
+              <p className="city-head-text">{t("differentDirections")}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="attraction-content flex">
-        <div className="flex-auto w-96">
+      <div className="attraction-content   flex">
+        <div className="w-[816px] text-justify">
           <div className="mt-[20px]">
             <h1 className="text-center font-bold text-[48px]">
               {t("karimovMuseum")}
             </h1>
-            <p className=" text-[22px] mt-[10px]">
-              {t("firstPresident")}
-            </p>
+            <p className=" text-[22px] mt-[10px] ">{t("firstPresident")}</p>
           </div>
           <div className="mt-[30px]">
             <img src={attractionimg1} alt="" />
@@ -41,7 +37,6 @@ const Attractions = () => {
             <p className="text-justify text-[22px] mt-[15px]">
               {t("unusuaPpictures")}
             </p>
-           
           </div>
           <div className="mt-[20px]">
             <span className="text-[#F3692E]">Location:</span>
@@ -59,8 +54,8 @@ const Attractions = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="mt-[40px]">
+        <div className="ml-[50px]">
+          <div className="mt-[100px]">
             <div className="col-span-4">
               <div className="flex flex-col">
                 <Search />

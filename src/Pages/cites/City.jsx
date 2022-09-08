@@ -20,9 +20,7 @@ const City = () => {
               <div className="cites-content">
                 <div className="mt-12">
                   <h1 className="city-head-title">{t("touristTowns")}</h1>
-                  <p className="city-head-text">
-                    {t("suggestionsUs")}
-                  </p>
+                  <p className="city-head-text">{t("suggestionsUs")}</p>
                 </div>
               </div>
             </div>
@@ -30,81 +28,79 @@ const City = () => {
           <div className="cites-content">
             <div className="city-content-main">
               <h1 className="">{t("worldWtour")}</h1>
-              <p>
-              {t("travel")}
-              </p>
-              <div className="mt-14 grid grid-cols-4 gap-2">
+              <p>{t("travel")}</p>
+              <div className="mt-14 grid grid-cols-4 gap-2 city-cards">
                 <div className="card-item">
                   <div className="card-image">
                     <img src={samarqand} alt="" />
                   </div>
-                  <h1 className="card-title">Samarqand</h1>
+                  <h2 className="city-title">Samarqand</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={xiva} alt="" />
                   </div>
-                  <h1 className="card-title">Xiva</h1>
+                  <h2 className="city-title">Xiva</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={namangan} alt="" />
                   </div>
-                  <h1 className="card-title">Namangan</h1>
+                  <h2 className="city-title">Namangan</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={fargona} alt="" />
                   </div>
-                  <h1 className="card-title">Farg‘ona</h1>
+                  <h2 className="city-title">Farg‘ona</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={namangan} alt="" />
                   </div>
-                  <h1 className="card-title">Namangan</h1>
+                  <h2 className="city-title">Namangan</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={termiz} alt="" />
                   </div>
-                  <h1 className="card-title">Termiz</h1>
+                  <h2 className="card-title">Termiz</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={fargona} alt="" />
                   </div>
-                  <h1 className="card-title">Farg‘ona</h1>
+                  <h2 className="city-title">Farg‘ona</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={samarqand} alt="" />
                   </div>
-                  <h1 className="card-title">Samarqand</h1>
+                  <h2 className="city-title">Samarqand</h2>
                 </div>
                 <div className="card-item">
                   <div className="card-image">
                     <img src={samarqand} alt="" />
                   </div>
-                  <h1 className="card-title">Samarqand</h1>
+                  <h2 className="city-title">Samarqand</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={xiva} alt="" />
                   </div>
-                  <h1 className="card-title">Xiva</h1>
+                  <h2 className="city-title">Xiva</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={namangan} alt="" />
                   </div>
-                  <h1 className="card-title">Namangan</h1>
+                  <h2 className="city-title">Namangan</h2>
                 </div>{" "}
                 <div className="card-item">
                   <div className="card-image">
                     <img src={fargona} alt="" />
                   </div>
-                  <h1 className="card-title">Farg‘ona</h1>
+                  <h2 className="city-title">Farg‘ona</h2>
                 </div>{" "}
               </div>
             </div>

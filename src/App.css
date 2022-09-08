@@ -5,6 +5,7 @@
 
 .center-text {
   font-weight: 700;
+  /*  */
   font-size: 48px;
   line-height: 120%;
   letter-spacing: 0.005em;
@@ -94,14 +95,17 @@
   .main-text {
     font-size: 45px !important;
     width: 382px !important;
+    text-align: center;
   }
   .last-text {
     width: 366px !important;
+    text-align: center;
   }
   .header-content button {
     width: 120px !important;
     height: 48px !important;
     font-size: 14px !important;
+    margin-left: 110px;
   }
   .center-text {
     font-size: 35px !important;
@@ -220,6 +224,55 @@
   .footer {
     padding-left: 28px !important;
     padding-right: 0 !important;
+  }
+  .city-content-main p {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+    color: #f3692e !important;
+  }
+  .city-head-title {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    width: 400px !important ;
+    letter-spacing: -0.04em !important;
+    color: #ffffff;
+    margin-left: 10px;
+    /* text-align: center !important; */
+  }
+  .city-head-text {
+    font-size: 20px !important;
+    width: 300px !important;
+    margin-top: 50px !important;
+    text-align: justify !important;
+    margin-left: 20px !important;
+  }
+  .city-content-main h1 {
+    font-size: 27px !important;
+    text-align: center !important;
+    width: 320px !important;
+    margin-left: 20px !important;
+  }
+
+  .city-content-main p {
+    margin-top: 20px;
+    width: 350px !important;
+    text-align: justify !important;
+    margin-left: 20px !important;
+  }
+  .cites-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .city-cards {
+    margin-top: 20px !important;
+    grid-template-columns: repeat(2, minmax(184px, 1fr)) !important;
+    margin-left: 12px;
+  }
+  .city-title {
+    font-size: 27px !important;
+    margin-left: 10px !important;
   }
 }
 
