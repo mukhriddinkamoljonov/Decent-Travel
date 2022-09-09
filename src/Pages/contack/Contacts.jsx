@@ -61,7 +61,7 @@ const Contacts = () => {
               <input type="text" />
             </div>
             <br />
-            <button className="bg-orange-600 w-[154px] h-[56px] p-[10px] rounded-lg text-white text-[16px] ml-64">
+            <button className="bg-orange-600 w-[154px] h-[56px] p-[10px] rounded-lg text-white text-[16px] ml-64 contactbutton">
               {t("request")}
             </button>
           </form>

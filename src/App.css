@@ -330,7 +330,27 @@
   }
   .formtext {
     width: 380px !important;
+    margin-top: 120px;
+  }
+  .question {
+    width: 380px !important;
+  }
+  .questionfrom {
+    display: none;
+  }
+  .locations {
     margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    color: #f3692e;
+    text-align: center;
+  }
+  .contactbutton {
+    margin-left: 0px !important;
+    height: 40px !important;
+    width: 320px !important;
   }
 }
 

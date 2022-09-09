@@ -25,9 +25,7 @@ const Questions = () => {
             <div className="cites-content">
               <div className="mt-[28px]">
                 <h1 className="city-head-title">{t("questions")} </h1>
-                <p className="city-head-text">
-                  {t("surveyQuestions")}
-                </p>
+                <p className="city-head-text">{t("surveyQuestions")}</p>
               </div>
             </div>
           </div>
@@ -42,7 +40,7 @@ const Questions = () => {
                     onClick={() => setExpanded(!expanded)}
                     className="question-title"
                   >
-                   {t("uzbekistanLocated")}
+                    {t("uzbekistanLocated")}
                   </h4>
                   <button
                     className="btn"
@@ -61,7 +59,7 @@ const Questions = () => {
                       loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"
                       frameBorder="0"
-                      title="location"
+                      title="locations"
                     ></iframe>
                   </>
                 )}
@@ -92,7 +90,7 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">{t("passport")}  </h2>
+              <h2 className="locations">{t("passport")} </h2>
               <article className="question">
                 <header>
                   <h4
@@ -145,16 +143,14 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">{t("viza")}</h2>{" "}
-              
-             
+              <h2 className="locations">{t("viza")}</h2>{" "}
               <article className="question">
                 <header>
                   <h4
                     onClick={() => setExpanded6(!expanded6)}
                     className="question-title"
                   >
-                    {t("term")} {" "}
+                    {t("term")}{" "}
                   </h4>
                   <button
                     className="btn"
@@ -174,7 +170,7 @@ const Questions = () => {
                   </>
                 )}
               </article>
-              <h2 className="location">{t("signUp")} </h2>{" "}
+              <h2 className="locations">{t("signUp")} </h2>{" "}
               <article className="question">
                 <header>
                   <h4
@@ -201,7 +197,6 @@ const Questions = () => {
                   </>
                 )}
               </article>{" "}
-              
               <article className="question">
                 <header>
                   <h4
@@ -229,7 +224,7 @@ const Questions = () => {
                 )}
               </article>
             </div>
-            <div className="mt-[40px]">
+            <div className="mt-[40px] questionfrom">
               <div className="col-span-4">
                 <div className="flex flex-col">
                   <Search />
@@ -247,7 +242,6 @@ const Questions = () => {
                       <li className="hover:text-[#F3692E] cursor-pointer">
                         {t("signUp")}
                       </li>
-                      
                     </ul>
                   </div>
                   <button className="py-[18px] w-[270px] mt-[32px] px-[32px] bg-[#F36326] rounded-lg not-italic font-semibold text-base text-center text-white">
