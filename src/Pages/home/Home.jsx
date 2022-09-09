@@ -30,6 +30,7 @@ import { FileIcon, MapIcon, MessengeIcon, PhoneIcon } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Aos from "aos";
 
 const SectionStyle = {
   height: "100vh",
@@ -54,6 +55,11 @@ function Home() {
       .catch((error) => {
         console.log(error);
       });
+  }, []);
+  
+  console.log(items);
+  useEffect(() => {
+    Aos.init();
   }, []);
   return (
     <div className="home">
