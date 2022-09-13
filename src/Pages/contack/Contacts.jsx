@@ -16,31 +16,27 @@ const Contacts = () => {
           <div className="cites-content">
             <div className="mt-24">
               <h1 className="city-head-title">{t("contact")} </h1>
-              <p className="city-head-text">
-              {t("connection")}
-              </p>
+              <p className="city-head-text">{t("connection")}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="flex mt-[40px] text-[20px] cites-content">
-        <div className="flex-initial w-[450px]">
-          <p className="text-justify">
-          {t("decentCompany")}
-          </p>
+        <div className="flex-initial">
+          <p className="text-justify  formtext">{t("decentCompany")}</p>
 
           <div className="mt-[80px]">
             <div className="flex">
               <div className="ml-[-6px]">
                 <Loc />
               </div>
-              <p className="w-[500px] ml-[10px]">
-                {t("address")}
-              </p>
+              <p className="w-[500px] ml-[10px]">{t("address")}</p>
             </div>
             <div className="flex mt-[10px]">
               <PhoneIcon />
-              <p className="w-[500px] ml-[10px]">+998 97 332 22 33, +998 90 580 25 05 </p>
+              <p className="w-[500px] ml-[10px]">
+                +998 97 332 22 33, +998 90 580 25 05{" "}
+              </p>
             </div>
             <div className="flex mt-[10px]">
               <MessengeIcon />
@@ -65,7 +61,7 @@ const Contacts = () => {
               <input type="text" />
             </div>
             <br />
-            <button className="bg-orange-600 w-[154px] h-[56px] p-[10px] rounded-lg text-white text-[16px] ml-64">
+            <button className="bg-orange-600 w-[154px] h-[56px] p-[10px] rounded-lg text-white text-[16px] ml-64 contactbutton">
               {t("request")}
             </button>
           </form>

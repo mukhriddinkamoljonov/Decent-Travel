@@ -10,6 +10,7 @@
   line-height: 120%;
   letter-spacing: 0.005em;
   color: #0e0e2c;
+  /* border-bottom: 4px solid   #f3692e; */
 }
 
 .center-text-line {
@@ -266,11 +267,133 @@
   .city-cards {
     margin-top: 20px !important;
     grid-template-columns: repeat(2, minmax(184px, 1fr)) !important;
-    margin-left: 12px;
   }
   .city-title {
     font-size: 27px !important;
     margin-left: 10px !important;
+  }
+  .about-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .about-content ul li {
+    width: 370px;
+    text-align: justify;
+    margin-left: 5px;
+  }
+  .about-content-main h1 {
+    text-align: center;
+    font-size: 23px;
+    width: 350px;
+    color: #f3692e;
+    font-family: cursive;
+  }
+
+  iframe {
+    width: 380px;
+    margin-left: 7px;
+  }
+  .location {
+    margin: -15px 0 10px 150px !important;
+  }
+  .about-content img {
+    min-width: 380px;
+    margin-left: 5px;
+  }
+  .cites-content {
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+  }
+  .forma {
+    width: 380px !important;
+    height: 392px;
+    background: #ffffff;
+    border-radius: 16px;
+    margin-left: 0 !important;
+  }
+  form input {
+    margin-top: 5px;
+    background: #f6f8fa;
+    outline: none;
+    border: 1px solid #eff3f8;
+    border-radius: 5px;
+    width: 340px !important;
+  }
+  form div {
+    margin-bottom: 0;
+  }
+  form {
+    padding: 40px;
+  }
+  .formtext {
+    width: 380px !important;
+    margin-top: 120px;
+  }
+  .question {
+    width: 380px !important;
+  }
+  .questionfrom {
+    display: none;
+  }
+  .locations {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    color: #f3692e;
+    text-align: center;
+  }
+  .contactbutton {
+    margin-left: 0px !important;
+    height: 40px !important;
+    width: 320px !important;
+  }
+
+  .detaled-title {
+    font-size: 37px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .detaled-title-2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .detailed-about {
+  }
+  .text {
+    font-size: 19px;
+  }
+  .detailed-items {
+    padding: 15px;
+  }
+  .travel-about {
+    margin-left: 18px;
+  }
+  .text-wont {
+    font-size: 17px;
+  }
+  .mleft {
+    margin-left: 110px;
+  }
+  .mleft-2 {
+    margin-left: 20px;
+  }
+  .youtube-video {
+    width: 350px;
+    height: 250px;
+  }
+  .flex-images-items img {
+    width: 360px;
+    margin-top: 20px;
+  }
+  .location-place {
+    width: 350px;
+    height: 400px;
+  }
+  .actions {
+    margin-left: 44px;
   }
 }
 
@@ -284,6 +407,41 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .location-place {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  .flex-images-items {
+    display: flex;
+  }
+  .flex-images-items img {
+    width: 240px;
+  }
+  .mleft {
+    margin-left: 9rem;
+  }
+  .mleft-2 {
+    margin-left: 2rem;
+  }
+  .mbottom {
+    margin-bottom: 0.5rem;
+  }
+  .travel-about {
+    margin-left: 100px;
+  }
+  .text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .detaled-title {
+    font-size: 3rem;
+  }
+  .detailed-about {
+    margin-left: 170px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .home_about-content {
     display: grid;
     grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -326,6 +484,18 @@
   }
   .footer-content {
     display: flex;
+  }
+  .detialed-content {
+    gap: 24px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    margin-top: 3rem;
+  }
+  .flex-images {
+    display: flex;
+  }
+  .text-wont {
+    margin-bottom: 1rem;
   }
 }
 
