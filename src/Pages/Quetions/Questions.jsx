@@ -257,5 +257,4 @@ const Questions = () => {
   );
 };
 
-export default Questions;        
-                    
+export default Questions;
