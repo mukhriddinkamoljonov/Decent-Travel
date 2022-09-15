@@ -90,16 +90,14 @@ const Umrah = () => {
             <img src={umrah} alt="" />
           </div>
         </div>
-        <div className="umrah-content px-[120px] flex">
+        <div className="umrah-content">
           <div className="flex-auto w-96 mt-[40px]">
             <div className="">
-              <h1 className="text-[48px] font-bold leading-[120%] text-[#0E0E2C] mt-[30px] text-left">
+              <h1 className="umrah-first-title leading-[120%]">
                 {t("umra_2022")}
               </h1>
               <div className="flex">
-                <p className="font-medium text-[20px] not-italic] text-[#0E0E2C] mt-[25px]">
-                  {t("departureDdate")}
-                </p>
+                <p className="booking-title mt-[25px]">{t("departureDdate")}</p>
                 <button className="band-btn">Band qilish</button>
               </div>
               <p className="font-medium ml-[610px] w-[320px] h-[32px] text-[18px] not-italic text-[#0E0E2C] mt-[15px]"></p>
@@ -168,7 +166,7 @@ const Umrah = () => {
             </div>
             <div className="mt-[30px]">
               <span className="text-[#F3692E]">Price (per person):</span>
-              <div className="w-[1030px] mt-[40px] border-black border-[1px] rounded-[10px]">
+              <div className="per-person mt-[40px] border-black border-[1px] rounded-[10px]">
                 <div className="flex items-center ml-[50px]">
                   <img src={rasm7} className="hotel_img" alt="" />
                   <span className="text-[25px] ml-[50px]">
@@ -176,7 +174,7 @@ const Umrah = () => {
                     <p>£1595</p>
                   </span>
                 </div>
-                <hr className="w-[970px] ml-[25px] border-black border-[0.5px] " />
+                <hr className="per-person-line  border-black border-[0.5px] " />
                 <div className="flex items-center ml-[50px]">
                   <img src={rasm8} className="hotel_img" alt="" />
                   <span className="text-[25px] ml-[50px]">
@@ -184,7 +182,7 @@ const Umrah = () => {
                     <p>£1595</p>
                   </span>
                 </div>
-                <hr className="w-[970px] ml-[25px] border-black border-[0.5px] " />
+                <hr className="per-person-line  border-black border-[0.5px] " />
                 <div className="flex items-center ml-[50px]">
                   <img src={rasm9} className="hotel_img" alt="" />
                   <span className="text-[25px] ml-[50px]">

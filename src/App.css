@@ -395,6 +395,31 @@
   .actions {
     margin-left: 44px;
   }
+
+  .umrah-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .umrah-first-title {
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .booking-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .band-btn {
+    background: #f36326;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    color: #fff;
+    letter-spacing: 0.005em;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-top: 10px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -496,6 +521,40 @@
   }
   .text-wont {
     margin-bottom: 1rem;
+  }
+  .umrah-content {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+  }
+  .umrah-first-title {
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .booking-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .band-btn {
+    background: #f36326;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    /* padding: 18px 32px; */
+    color: #fff;
+    letter-spacing: 0.005em;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-top: 10px;
+  }
+  .per-person {
+    width: 1030px;
+  }
+  .per-person-line {
+    width: 950px;
+    margin-left: 25px;
   }
 }
 
