@@ -56,19 +56,19 @@ function Home() {
         console.log(error);
       });
   }, []);
-  
+
   console.log(items);
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <div className="home">
-      <Fullpage>
+      {/* <Fullpage>
         <div className="sectionNav">
           <FullpageNavigation style={{ zIndex: "-1" }} />
         </div>
         <FullPageSections>
-          <FullpageSection style={{ SectionStyle }}>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="header_section-one">
               <div className="header-bc">
                 <div className="header-content">
@@ -83,8 +83,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }} className="example_Section">
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }} className="example_Section"> */}
             <div className="header_section-two">
               <div className="home_cards">
                 <h1 className="center-text">{t("turist_city")}</h1>
@@ -158,8 +158,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="home_urmrah">
               <div className="home_umrah_content">
                 <div className="home_umrah_image">
@@ -175,8 +175,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="home_carousel">
               <h1 className="center-text">{t("attractions")}</h1>
               <hr className="carousel-text-line" />
@@ -247,8 +247,8 @@ function Home() {
                 </Swiper>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="home_galereya">
               <div className="home_galereya_content">
                 <h1 className="center-text_3">{t("gallery")} </h1>
@@ -269,8 +269,8 @@ function Home() {
                 <button>{t("see_all")}</button>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="home_about">
               <h1 className="center-text_4">{t("about_Us")} </h1>
               <hr className="center-text-line_4" />
@@ -290,8 +290,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          </FullpageSection>
-          <FullpageSection style={{ SectionStyle }}>
+          {/* </FullpageSection>
+          <FullpageSection style={{ SectionStyle }}> */}
             <div className="home_contact">
               <h1 className="center-text_5">{t("our_contacts")} </h1>
               <hr className="center-text-line_5" />
@@ -330,9 +330,9 @@ function Home() {
               <button>{t("send_request")} </button>
             </div>
             {/* <Foo  ter /> */}
-          </FullpageSection>
+          {/* </FullpageSection>
         </FullPageSections>
-      </Fullpage>
+      </Fullpage> */}
     </div>
   );
 }
