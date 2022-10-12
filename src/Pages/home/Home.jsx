@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from "@ap.cx/react-fullpage";
 import "./Home.css";
 import samarqand from "../../assets/Images/samarqand.png";
 import xiva from "../../assets/Images/xiva.png";
@@ -266,7 +261,9 @@ function Home() {
               <img src={naman} alt="" />
             </div>
           </div>
-          <button>{t("see_all")}</button>
+          <Link to="/questions">
+            <button>{t("see_all")}</button>
+          </Link>
         </div>
       </div>
       {/* </FullpageSection>
@@ -285,7 +282,10 @@ function Home() {
           <div class="about-text">
             <div>
               <p>{t("decent_info")}</p>
-              <button>{t("learn_more")} </button>
+
+              <Link to="/aboutus">
+                <button>{t("learn_more")} </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -327,7 +327,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <button>{t("send_request")} </button>
+        <Link to="/contacts">
+          <button>{t("send_request")} </button>
+        </Link>
       </div>
       {/* <Foo  ter /> */}
       {/* </FullpageSection>

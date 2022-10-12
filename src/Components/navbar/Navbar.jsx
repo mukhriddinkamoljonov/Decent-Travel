@@ -9,6 +9,7 @@ import arb from "../../assets/arb.svg";
 import { FlagIcon, Logo, UzbFlag } from "../../assets/icon";
 import { useTranslation } from "react-i18next";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const languages = [
   {
@@ -45,7 +46,7 @@ function Navbar() {
     { name: `${t("pilgrimage")}`, href: "/umrah", current: false },
     { name: `${t("attractions")}`, href: "/attractions", current: false },
     { name: `${t("gallery")}`, href: "/questions", current: false },
-    { name: `${t("about_Us")}`, href: "/abo utus", current: false },
+    { name: `${t("about_Us")}`, href: "/aboutus", current: false },
     { name: `${t("сommunication")}`, href: "/contacts", current: false },
   ];
   return (
@@ -78,7 +79,21 @@ function Navbar() {
                   <div className="hidden sm:block sm:ml-20 mt-4">
                     <div className="flex space-x-4 ml-3">
                       {navigation.map((item) => (
-                        <a
+                        <Link
+                          to={item.href}
+                          key={item.name}
+                          className={classNames(
+                            item.current
+                              ? "bg-gray-900 text-white"
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "px-2 py-2 rounded-md text-sm font-medium"
+                          )}
+                          aria-current={item.current ? "page" : undefined}
+                        >
+                          <button>{item.name}</button>
+                        </Link>
+                      ))}
+                      {/* <a
                           key={item.name}
                           href={item.href}
                           className={classNames(
@@ -90,8 +105,7 @@ function Navbar() {
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
-                        </a>
-                      ))}
+                        </a> */}
                     </div>
                   </div>
                   <div className="mt-4 icons-nav">
