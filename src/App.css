@@ -584,6 +584,9 @@
   .home_galereya_content {
     padding-top: 20px;
   }
+  .header_section-two {
+    height: 750px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
