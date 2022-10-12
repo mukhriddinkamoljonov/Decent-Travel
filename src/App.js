@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <Layout>
-        <div className="container">
+        <div className="containera">
           <Routes>
             {Main.map((page) => (
               <Route path={page?.path} element={page?.page} />

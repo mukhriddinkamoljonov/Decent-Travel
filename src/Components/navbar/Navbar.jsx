@@ -45,7 +45,7 @@ function Navbar() {
     { name: `${t("pilgrimage")}`, href: "/umrah", current: false },
     { name: `${t("attractions")}`, href: "/attractions", current: false },
     { name: `${t("gallery")}`, href: "/questions", current: false },
-    { name: `${t("about_Us")}`, href: "/aboutus", current: false },
+    { name: `${t("about_Us")}`, href: "/abo utus", current: false },
     { name: `${t("сommunication")}`, href: "/contacts", current: false },
   ];
   return (
@@ -68,12 +68,10 @@ function Navbar() {
                 </div>
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <span className="hidden lg:block h-8 w-auto mb-10">
+                    <span className="block lg:hidden h-8 w-auto mb-[40px]">
+                      <Logo />
+                    </span>{" "}
+                    <span className="hidden sm:block md:block lg:block xl:block h-8 w-auto mb-10">
                       <Logo />
                     </span>
                   </div>
@@ -96,10 +94,10 @@ function Navbar() {
                       ))}
                     </div>
                   </div>
-                  <div className="mt-4" style={{ marginLeft: "50px" }}>
+                  <div className="mt-4 icons-nav">
                     <Menu as="div" className="relative inline-block text-left">
                       <div className="flex">
-                        <Menu.Button className="ml-5 inline-flex justify-center w-full rounded-md px-4 py-2 text-sm font-medium">
+                        <Menu.Button className="ml-[32px] inline-flex justify-center w-full rounded-md px-4 py-2 text-sm font-medium mt-[-5px]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width={33}
@@ -154,7 +152,7 @@ function Navbar() {
               <hr />
             </div>
 
-            <Disclosure.Panel className="sm:hidden">
+            <Disclosure.Panel className="sm:hidden pt-[73px]">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Disclosure.Button

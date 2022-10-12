@@ -36,15 +36,3 @@ body {
   width: 100%;
   z-index: -1;
 }
-
-.band-btn {
-  background: #f36326;
-  border-radius: 8px;
-  width: 140px;
-  height: 56px;
-  padding: 18px 32px;
-  color: #fff;
-  letter-spacing: 0.005em;
-  font-size: 16px;
-  margin-left: 432px;
-}

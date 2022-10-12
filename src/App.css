@@ -84,6 +84,10 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .icons-nav {
+    margin-left: 92px;
+    margin-right: -31px;
+  }
   .header-content {
     padding-left: 17px !important;
   }
@@ -114,7 +118,7 @@
   }
   .card_content {
     margin-top: 20px !important;
-    padding-left: 173px !important;
+    padding-left: 15px !important;
     grid-template-columns: repeat(2, minmax(184px, 1fr)) !important;
   }
   .card-title {
@@ -151,6 +155,7 @@
     padding-left: 17px !important;
     padding-right: 0 !important;
     padding-top: 30px !important;
+    height: 647px;
   }
 
   .center-text {
@@ -395,6 +400,40 @@
   .actions {
     margin-left: 44px;
   }
+
+  .umrah-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .umrah-first-title {
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .booking-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .band-btn {
+    background: #f36326;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    color: #fff;
+    letter-spacing: 0.005em;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-top: 10px;
+  }
+  .home_contact {
+    margin-top: 140px;
+  }
+  .home_galereya {
+    height: 100vh;
+  }
+  .home_galereya_content {
+    padding-top: 20px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -407,6 +446,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .icons-nav {
+    margin-left: 50px;
+    /* margin-right: -31px; */
+  }
   .location-place {
     width: 100%;
     height: 400px;
@@ -443,8 +486,9 @@
     line-height: 2rem;
   }
   .home_about-content {
+    margin-top: 20px;
     display: grid;
-    grid-template-rows: repeat(3, minmax(0, 1fr));
+    /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
     grid-auto-flow: column;
     padding-top: 50px;
     padding-left: 120px;
@@ -496,6 +540,49 @@
   }
   .text-wont {
     margin-bottom: 1rem;
+  }
+  .umrah-content {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+  }
+  .umrah-first-title {
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .booking-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .band-btn {
+    background: #f36326;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    /* padding: 18px 32px; */
+    color: #fff;
+    letter-spacing: 0.005em;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-top: 10px;
+  }
+  .per-person {
+    width: 1030px;
+  }
+  .per-person-line {
+    width: 950px;
+    margin-left: 25px;
+  }
+  .home_contact {
+    margin-top: 140px;
+  }
+  .home_galereya {
+    height: 700px;
+  }
+  .home_galereya_content {
+    padding-top: 20px;
   }
 }
 
