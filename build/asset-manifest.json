@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbb4dc75.css",
-    "main.js": "/static/js/main.2aaddff6.js",
+    "main.css": "/static/css/main.57ecad6b.css",
+    "main.js": "/static/js/main.e8dd90ca.js",
     "static/media/questions.png": "/static/media/questions.c8d39b4dbe30258dfece.png",
     "static/media/homeImag.png": "/static/media/homeImag.ed492650ec5a8acb372b.png",
     "static/media/city.png": "/static/media/city.309a7c60ba8efe7aec81.png",
@@ -22,6 +22,7 @@
     "static/media/Rectangle 2815.png": "/static/media/Rectangle 2815.ff409d87092e2d3090ae.png",
     "static/media/saroy.png": "/static/media/saroy.bd125e1b2432ecb37863.png",
     "static/media/ziyorat.png": "/static/media/ziyorat.165a6d0473c482f6a9a2.png",
+    "static/media/logo.png": "/static/media/logo.1ce44388b6bf3ffd0dea.png",
     "static/media/haykal.png": "/static/media/haykal.bc078897adec034564b2.png",
     "static/media/Rectangle 9553.png": "/static/media/Rectangle 9553.f57d5d687ddb9ec57945.png",
     "static/media/about2.png": "/static/media/about2.e8a0f2b398f9c5018ec2.png",
@@ -44,11 +45,11 @@
     "static/media/sam.jpg": "/static/media/sam.f3d6827324ef9bb886ac.jpg",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.fbb4dc75.css.map": "/static/css/main.fbb4dc75.css.map",
-    "main.2aaddff6.js.map": "/static/js/main.2aaddff6.js.map"
+    "main.57ecad6b.css.map": "/static/css/main.57ecad6b.css.map",
+    "main.e8dd90ca.js.map": "/static/js/main.e8dd90ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbb4dc75.css",
-    "static/js/main.2aaddff6.js"
+    "static/css/main.57ecad6b.css",
+    "static/js/main.e8dd90ca.js"
   ]
 }
