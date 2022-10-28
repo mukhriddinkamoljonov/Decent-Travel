@@ -316,19 +316,19 @@ function Home() {
               <span>
                 <MessengeIcon />
               </span>
-              <p>contact@TourismUmrah.com</p>
+              <p>decenttravel@mail.ru</p>
             </div>{" "}
             <br />
             <div className="flex">
               <span>
                 <FileIcon />
               </span>
-              <p>fax@TourismUmrah.com</p>
+              <p>decenttravel@mail.ru</p>
             </div>
           </div>
         </div>
         <Link to="/contacts">
-          <button>{t("send_request")} </button>
+          {/* <button>{t("send_request")} </button> */}
         </Link>
       </div>
       {/* <Foo  ter /> */}
