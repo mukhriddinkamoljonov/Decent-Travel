@@ -6,7 +6,8 @@ import uzb from "../../assets/uzb.svg";
 import eng from "../../assets/eng.svg";
 import rus from "../../assets/rus.svg";
 import arb from "../../assets/arb.svg";
-import { FlagIcon, Logo, UzbFlag } from "../../assets/icon";
+import { FlagIcon, UzbFlag } from "../../assets/icon";
+import Logo from "../../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import "./navbar.css";
 import { Link } from "react-router-dom";
@@ -70,10 +71,10 @@ function Navbar() {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex items-center">
                     <span className="block lg:hidden h-8 w-auto mb-[40px]">
-                      <Logo />
+                      <img src={Logo} alt="" className="w-[85px] h-[68px]" />
                     </span>{" "}
                     <span className="hidden sm:block md:block lg:block xl:block h-8 w-auto mb-10">
-                      <Logo />
+                      <img src={Logo} alt="" className="w-[85px] h-[68px]" />
                     </span>
                   </div>
                   <div className="hidden sm:block sm:ml-20 mt-4">

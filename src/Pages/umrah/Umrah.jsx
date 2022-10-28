@@ -83,10 +83,10 @@ const Umrah = () => {
     <>
       <div className="w-full h-screen mx-auto  absolute">
         <div className="w-full h-[100vh] bg-zinc-900 flex justify-center items-center ">
-          <div className="w-3/6 leading-[96px] text-white text-[70px] font-bold pl-[120px] ">
-            <h1>{t("umrah_name")} </h1>
+          <div className="leading-[96px] text-white ">
+            <h1 className="umrah-head-title">{t("umrah_name")} </h1>
           </div>
-          <div className="w-3/6 pl-[10px]">
+          <div className="w-3/6 pl-[10px] umrah-img">
             <img src={umrah} alt="" />
           </div>
         </div>
